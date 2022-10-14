@@ -17,18 +17,25 @@ public class BuildingBlocks {
          * The following data types are also referred to as "primitive data types"
          */
         // Declaring a variable of data type integer and assigning a value
-        double appleUnitPrice = 0.52; // price in dollars
-        // TODO: Display "Apple Unit Price: $0.52"
+        double appleUnitPrice = 0.55; // price in dollars
+        // Display "Apple Unit Price: $<appleUnitPrice>"
+        System.out.println("Apple Unit Price: $" + appleUnitPrice);
+
         int appleQty = 10; 
-        // TODO: Display "Qty: 10"
-        // TODO: Declare a variable named amountDue and assign it to appleUnitPrice * appleQty
-        // TODO: Display "Amount due: $5.20"
+        // Display "Qty: 10"
+        System.out.println("Qty: " + appleQty);
+        // Declare a variable named amountDue and assign it to appleUnitPrice * appleQty
+        double amountDue = appleUnitPrice * appleQty;
+        // Display "Amount due: $<amountDue>"
+        System.out.println("Amount Due: $" + amountDue);
         System.out.println("------------------------------------------------------------------------------------------");
 
         // Declaring a variable of data type float and assigning a value
         float temperature = 2.4f;
-        // TODO: Increase the temperature by 5.7 degrees celcius
-        // TODO: Display "Temperature: 8.1 degrees celcius"
+        // Increase the temperature by 5.7 degrees celcius
+        temperature = temperature + 5.7f;
+        // Display "Temperature: <temperature> degrees celcius"
+        System.out.println("Temperature: " + temperature + " degrees celcius");
         System.out.println("------------------------------------------------------------------------------------------");
 
         // Declaring a variable of data type double and assigning a value

@@ -10,7 +10,8 @@ public class BuildingBlocks {
         /**
          * 2.5
          */
-        //TODO: Declare and assign a constant for NO_OF_WEEK_DAYS
+        //Declare and assign a constant for NO_OF_WEEK_DAYS
+        final int NO_OF_WEEK_DAYS = 7;
 
         /**
          * 2.2, 2.3, 2.4, 2.6
@@ -40,8 +41,10 @@ public class BuildingBlocks {
 
         // Declaring a variable of data type double and assigning a value
         double balance = 100.40;
-        // TODO: Decrease the balance by 4.95 dollars
-        // TODO: Display "Account Balance: 95.45"
+        // Decrease the balance by 4.95 dollars
+        balance = balance - 4.95;
+        // Display "Account Balance: $<balance>"
+        System.out.println("Account Balance: $" + balance);
         System.out.println("------------------------------------------------------------------------------------------");
 
         // Declaring a variable of data type char and assigning a value

@@ -1,5 +1,7 @@
 package lesson02;
 
+import helpers.Keyboard;
+
 /**
  * TODO:
  * 
@@ -17,11 +19,21 @@ package lesson02;
 public class CalculateTeams {
     public static void main(String[] args) {
         // TODO: Declare variables
+        int totalStudents, teamSize, teams, remaining;
 
-        // TODO: Input
+        // Input
+        System.out.println("Please enter the total number of students:");
+        totalStudents = Keyboard.readInt();
 
-        // TODO: Process
+        System.out.println("Please enter the size of the teams:");
+        teamSize = Keyboard.readInt();
 
-        // TODO: Output
+        // Process
+        teams = totalStudents / teamSize;
+        remaining = totalStudents % teamSize;
+
+        // Output
+        System.out.println("Number of teams formed: " + teams);
+        System.out.println("Students without a team: " + remaining);
     }
 }

@@ -17,7 +17,7 @@ public class StackPerfectCheeseburger {
             currentIng = currentIng - 1; 
         }
 
-        System.out.println("Your dinner is served. Buon apetit!\n");
+        System.out.println("Your dinner is served. Bon appetit!\n");
         System.out.println(perfectBurger);
     }
 

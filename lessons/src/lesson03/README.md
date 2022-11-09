@@ -52,3 +52,13 @@ We normally want the program to make decisions based on a combination of:
 - AND `&&`
 - OR `||`
 - NOT `!`
+
+## 3.6 Nested IF ... ELSE statements
+
+Java blocks of code take either in the form of one statement, or a number of statements that are within `{}`. You have been using various blocks already. For instance, `FlourCupsGramsConvert` had two blocks nested into each other.
+
+The reality is that any code block can be within another code block, therefore, we can also have an `if...else` statement within another `if...else` statement.
+
+```
+```
+(TBC)

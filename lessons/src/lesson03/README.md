@@ -57,8 +57,28 @@ We normally want the program to make decisions based on a combination of:
 
 Java blocks of code take either in the form of one statement, or a number of statements that are within `{}`. You have been using various blocks already. For instance, `FlourCupsGramsConvert` had two blocks nested into each other.
 
-The reality is that any code block can be within another code block, therefore, we can also have an `if...else` statement within another `if...else` statement.
+The reality is that any code block can be within another code block, therefore, we can also have an `if...else` statement within another `if...else` statement. This is similar to what is in `Selection`.
 
 ```
+if (age >= 60) {
+    // This code will run if and only if age is greater or equal to 60
+    System.out.println("Enjoy your golden years!");
+} else {
+    if (age >= 21) {
+        // This code will run if age is less than 60 AND age is greater or equal to 21
+        System.out.println("You can drink and drive (not at the same time)!");
+    }
+}
 ```
-(TBC)
+
+Although the above could look considerably neater by perhaps doing...
+
+```
+if (age >= 60) {
+    // This code will run if and only if age is greater or equal to 60
+    System.out.println("Enjoy your golden years!");
+} else if (age >= 21) {
+    // This code will run if age is less than 60 AND age is greater or equal to 21
+    System.out.println("You can drink and drive (not at the same time)!");
+}
+```

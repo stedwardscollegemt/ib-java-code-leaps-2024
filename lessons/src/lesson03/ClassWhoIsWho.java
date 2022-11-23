@@ -63,18 +63,5 @@ public class ClassWhoIsWho {
                 }
             }
         }
-        // is the person very tall?
-
-
-        
-        // brown hair
-
-        // black hair
-
-        // blue hair
-
-        // red hair
-
-        // green hair
     }
 }

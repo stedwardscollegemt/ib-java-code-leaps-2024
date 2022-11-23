@@ -34,6 +34,32 @@ public class ClassWhoIsWho {
                 hasFeature = Keyboard.readBoolean();
                 if (hasFeature) {
                     System.out.println("It is Dmitrii then!");
+                } else {
+                    System.out.println("Is the hair parted exactly in the middle?");
+                    hasFeature = Keyboard.readBoolean();
+                    if (hasFeature) {
+                        System.out.println("Then it is Fried T, Ms C and Fried T are still working things out...");
+                    } else {
+                        System.out.println("Is his mouth open like he is laughing at Ms Cs lack of social skills?");
+                        hasFeature = Keyboard.readBoolean();
+                        if (hasFeature) {
+                            System.out.println("It is Simon, he finds her blunders amusing!");
+                        } else {
+                            System.out.println("Wait, hold on, does he have green hair?");
+                            hasFeature = Keyboard.readBoolean();
+                            if (hasFeature) {
+                                System.out.println("It is Joshua, he is super nice!");
+                            } else {
+                                System.out.println("Oh dear, perhaps his eyes are squinted and is he smiley?");
+                                hasFeature = Keyboard.readBoolean();
+                                if (hasFeature) {
+                                    System.out.println("Then it is Kailu, he is very well mannered and travelled the world!");
+                                } else {
+                                    System.out.println("Run! It is Benedek and he will trash you in Tetris!");
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

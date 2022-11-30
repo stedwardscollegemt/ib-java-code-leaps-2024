@@ -1,7 +1,5 @@
 package lesson03;
 
-import java.security.Key;
-
 import helpers.Keyboard;
 
 public class ClassWhoIsWho {

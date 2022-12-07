@@ -5,29 +5,36 @@ public class CleanHouse {
         
     }
 
-    public static void sweepTheFloor(String supply1) {
-        System.out.println("I am sweeping the floor with:  " + supply1);
+    public static void sweepTheFloor(String broom) {
+        System.out.println("I am sweeping the floor with:  " + broom);
     }
 
     public static void declutter() {
-        
+        System.out.println("I am decluttering with my hands.");
+    }
+
+    public static void rearrange() {
+        System.out.println("I am rearranging with my hands.");
     }
 
     public static void cleanTerrace(String[] supplies) {
-        sweepTheFloor("broom");
+        sweepTheFloor("Outside Broom");
     }
 
     public static void cleanOffice(String[] supplies) {
-        sweepTheFloor("broom");
+        declutter();
+        sweepTheFloor("Inside Broom");
+        rearrange();
     }
 
     public static void cleanBedroom(String[] supplies) {
-        sweepTheFloor();
+        declutter();
+        sweepTheFloor("Inside Broom"); 
+        rearrange();
     }
 
     public static void cleanBathroom(String[] supplies) {
-        sweepTheFloor();
+        declutter();
+        sweepTheFloor("Inside Broom");
     }
-
-    
 }

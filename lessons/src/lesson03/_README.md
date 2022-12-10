@@ -1,8 +1,9 @@
 # Selection
 
 ## IB Learning Outcomes
-- 4.3.8 Define <, >, <=, >=, ==, !=
-- 4.3.9 Construct algorithms that make use of branching
+- 4.1.1 Able to identify a suitable procedure in an attempt to solve a very simple problem.
+- 4.1.2 Able to evaluate whether the order of steps makes a difference.
+- 4.1.3 Able to explain the role of sub procedures in solving a large problem.
 
 ## 3.2 Making Choices
 

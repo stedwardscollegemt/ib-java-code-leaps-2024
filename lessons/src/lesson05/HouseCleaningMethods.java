@@ -1,26 +1,28 @@
 package lesson05;
 
+/**
+ * Topic 4 Slides (Thinking Procedurally)
+ * This program is meant to describe an efficient way of cleaning a small
+ * apartment using a divide and conquer approach.
+ */
 public class HouseCleaningMethods {
     
     /**
      * The main() is called automatically when we click on Run.
-     * @param args
      */
     public static void main(String[] args) {
         
-        System.out.println("Here is a process of cleaning the house.");
+        // welcome message
+        System.out.println("*** Clean House Process***");
+        System.out.println("--------------------------");
+        System.out.println("");
 
-        // we need to call a method we defined for it to run
-        cleanTerrace();
-        
-        cleanOffice();
-        
-        cleanBedroom();
-        
-        cleanBathroom();
-        
-        cleanKitchen();
-        
+        // we need to call all methods we defined for them to run
+        cleanTerrace();   
+        cleanOffice();      
+        cleanBedroom();     
+        cleanBathroom();     
+        cleanKitchen();     
         cleanLivingRoom();
     }
 
@@ -28,57 +30,69 @@ public class HouseCleaningMethods {
      * ---- Methods For Individual Cleaning Tasks ---------------------------------------------
      */
     public static void sweepTheFloor(String broom) {
-        System.out.println("I am sweeping the floor with:  " + broom);
+        System.out.println("  --Sweep Floor:  " + broom);
     }
 
     public static void declutter() {
-        System.out.println("I am decluttering with my hands.");
+        System.out.println("  --Declutter");
     }
 
     public static void rearrange() {
-        System.out.println("I am rearranging with my hands.");
+        System.out.println("  --Rearrange");
     }
 
     /**
      * ---- Methods For Cleaning Zones ---------------------------------------------
      */
     public static void cleanTerrace() {
-        System.out.println("Cleaning Terrace:");
+        System.out.println("Terrace:");
+        System.out.println("--------------------------");
         sweepTheFloor("Outside Broom");
+        System.out.println("");
     }
 
     public static void cleanOffice() {
-        System.out.println("Cleaning Office:");
+        System.out.println("Office:");
+        System.out.println("--------------------------");
         declutter(); // a method call within a method is possible
         sweepTheFloor("Inside Broom");
         rearrange();
+        System.out.println("");
     }
 
     public static void cleanBedroom() {
-        System.out.println("Cleaning Bedroom");
+        System.out.println("Bedroom");
+        System.out.println("--------------------------");
         declutter();
         sweepTheFloor("Inside Broom"); 
         rearrange();
+        System.out.println("");
     }
 
     public static void cleanBathroom() {
-        System.out.println("Cleaning Bathroom");
+        System.out.println("Bathroom");
+        System.out.println("--------------------------");
         declutter();
         sweepTheFloor("Inside Broom");
         rearrange();
+        System.out.println("");
     }
 
     public static void cleanKitchen() {
-        System.out.println("Cleaning Kitchen");
+        System.out.println("Kitchen");
+        System.out.println("--------------------------");
         declutter();
         sweepTheFloor("Inside Broom");
         rearrange();
+        System.out.println("");
     }
 
     public static void cleanLivingRoom() {
-        System.out.println("Cleaning Living Room");
+        System.out.println("Living Room");
+        System.out.println("--------------------------");
         declutter();
         sweepTheFloor("Inside Broom");
         rearrange();
+        System.out.println("");
     }
 }

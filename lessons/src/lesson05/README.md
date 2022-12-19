@@ -25,6 +25,14 @@ public static void main(String[] args) {
 - Header: the first four words followed by parenthesis
 - Body: the two curly brackets and its contents
 
+## Keyboard.readInt()
+
+We have also been relying on methods written for us in the `Keyboard` class. In the example below we are calling `readInt()` which resides in the `Keyboard` class. It contains code that can accept user input and convert it into an integer.
+
+```
+int age = Keyboard.readInt();
+```
+
 ## A custom method()
 
 Here is an example of a custom method, which is not the `main()` inside a class called `MathPal`. Look at the method `add`.

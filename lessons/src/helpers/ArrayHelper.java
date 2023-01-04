@@ -210,4 +210,22 @@ public class ArrayHelper {
         }
         System.out.println();
     }
+
+    public static void printElements(double[] arr) {
+        for(double e : arr) {
+            System.out.print(e + ", ");
+        }
+        System.out.println();
+    }
+
+    /**
+     * You need to use this for your Banking App assignment
+     * @param arr
+     */
+    public static void printElements(String[] arr) {
+        for(String e : arr) {
+            System.out.print(e + ", ");
+        }
+        System.out.println();
+    }
 }

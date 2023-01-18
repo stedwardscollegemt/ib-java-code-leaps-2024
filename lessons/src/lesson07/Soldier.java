@@ -18,9 +18,16 @@ public class Soldier {
 
     boolean isHungry;
 
+    char gender;
+
     /**
      *  ------------- Coming Soon -----------------------------------
     */
+    public Soldier() {} // default constructor
+
+    public Soldier(char gender) { // parametised constructor to immediately get a desired state
+        this.gender = gender;
+    }
 
     /**
      * ------------- Behavioral Methods -----------------------------

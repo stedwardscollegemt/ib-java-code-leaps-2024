@@ -29,10 +29,13 @@ public class NoughtsAndCrosses {
         for (int row = 0; row < 3; row++) { // jump to row (vertically)
             System.out.println("---------------------");
             for (int col = 0; col < 3; col++) { // jump to col (horizontally)
+                // check if there is a chracter if not put a space
+                // this is only for pretty display reasons
                 if (grid[row][col] == 0) {
                     grid[row][col] = ' ';
                 }
                 System.out.print("|  " + grid[row][col]);
+                // if we are at the edge of a row close the grid
                 if (col == 2) {
                     System.out.print("  |");
                 } else {

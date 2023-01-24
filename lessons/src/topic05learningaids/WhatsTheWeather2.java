@@ -1,5 +1,12 @@
 package topic05learningaids;
 
+/**
+ * When practicing one-dimensional arrays under lesson07 (coinciding with topic 4) 
+ * we looked into various one dimensional arrays. What would the same application look like if we had 
+ * to record temperature data not only per day, but per hour as well?
+ * 
+ * 5.1.4 Describe the characteristics of a two-dimensional array.
+ */
 public class WhatsTheWeather2 {
     
     public static void main() {

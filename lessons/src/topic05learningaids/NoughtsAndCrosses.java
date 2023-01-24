@@ -1,8 +1,8 @@
 package topic05learningaids;
 
 /**
- * Describe the nature of 2D arrays.
- * Construct algorithms with 2D arrays.
+ * 5.1.4 - Describe the nature of 2D arrays.
+ * 5.1.5 - Construct algorithms with 2D arrays.
  */
 public class NoughtsAndCrosses {
 
@@ -21,13 +21,17 @@ public class NoughtsAndCrosses {
 
         // display grid with winning X streak
         displayGrid();
+        System.out.println("Horizontal Check Row 0: " + horizontalCheck(0, 'X'));
+
+        // TODO: filling the first col with noughts
+        // TODO: display grid with winning O streak
     }
 
     public static void displayGrid() {
         // key lesson is navigating through a 2D array
         // using nested for loops
         for (int row = 0; row < 3; row++) { // jump to row (vertically)
-            System.out.println("---------------------");
+            System.out.println("-------------------");
             for (int col = 0; col < 3; col++) { // jump to col (horizontally)
                 // check if there is a chracter if not put a space
                 // this is only for pretty display reasons
@@ -39,17 +43,21 @@ public class NoughtsAndCrosses {
                 if (col == 2) {
                     System.out.print("  |");
                 } else {
-                    System.out.print("   ");
+                    System.out.print("  ");
                 }
             }
             System.out.println("");
         }
-        System.out.println("---------------------");
+        System.out.println("-------------------");
     }
 
     public static boolean horizontalCheck(int row, char symbol) {
-        // TODO
-        return false;
+        for (int i = 0; i < grid[row].length; i++) {
+            if (grid[row][i] != symbol) {
+                return false;
+            }
+        }
+        return true;
     }
 
     public static boolean verticalCheck(int col, char symbol) {
@@ -57,12 +65,12 @@ public class NoughtsAndCrosses {
         return false;
     }
 
-    public static boolean diagonalCheck(int col, char symbol) {
+    public static boolean diagonalCheck(char symbol) {
         // TODO
         return false;
     }
 
-    public static boolean isWinningMove(int col, char symbol) {
-        return diagonalCheck(col, symbol) || verticalCheck(col, symbol) || horizontalCheck(col, symbol);
+    public static boolean isWinningMove(int index, char symbol) {
+        return diagonalCheck(symbol) || verticalCheck(index, symbol) || horizontalCheck(index, symbol);
     }
 }

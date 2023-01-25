@@ -70,8 +70,22 @@ public class NoughtsAndCrosses {
     }
 
     public static boolean diagonalCheck(char symbol) {
-        // TODO
-        return false;
+        char middle = grid[1][1];
+        if (middle != symbol) {
+            return false;
+        }
+        // extreme checks
+        for (int row = 0; row < grid.length; row++) {
+            for (int col = 0; col < grid[0].length; col++) {
+
+                // looking at symbol
+                // checking if it is what i am looking for
+                if (grid[row][col] != symbol) {
+                    break; // todo we need to check
+                }
+            }
+        }
+        return true;
     }
 
     public static boolean isWinningMove(int index, char symbol) {

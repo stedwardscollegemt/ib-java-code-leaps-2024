@@ -8,7 +8,7 @@ import java.util.Random;
 public class AmongUs {
 
     /**
-     * - static means *no state* and does not 
+     * - static means *no state* and does not belong to one instance
      * - static attributes do not describe the state of an object instance
      * - static attributes can be accessed directly using the class
      */
@@ -23,15 +23,13 @@ public class AmongUs {
 
     // Declare a static final array with all the roles allowed
     public static final String[] ROLES = {
-        "Crew", "Imposter", "Ghost", "Scientist", "Engineer",
+        "Crew", "Ghost", "Scientist", "Engineer", "Imposter",
         "Shapeshifter", "Guardian Angel"
     };
 
     public static final int CREW_MAX = 10;
 
     public static final int IMPOSTER_MAX = 2;
-
-
 
     private static boolean[] AVAILABLE_COLOURS = {
         true, true, true,

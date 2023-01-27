@@ -3,7 +3,7 @@ package topicDlearningaids;
 import java.util.Random;
 
 /**
- * Define static
+ * D.3.3. Define static
  */
 public class AmongUs {
 
@@ -81,16 +81,38 @@ public class AmongUs {
           // get a random number between 0 and WARDROBE.length - 1
           // https://stackoverflow.com/questions/2444019/how-do-i-generate-a-random-integer-between-min-and-max-in-java
           select = r.nextInt(WARDROBE.length - 1); 
-        } while(AVAILABLE_COLOURS[select] == false);
+        } while(!isColourAvailable(WARDROBE[select])); // 
         this.colour = WARDROBE[select];
         AVAILABLE_COLOURS[select] = false;
+    }
+
+    private boolean isColourAvailable(String colour) {
+        // perform linear search on colour to get index
+        for(int i = 0; i < WARDROBE.length; i++) {
+            if (WARDROBE[i].equals(colour)) {
+                return (AVAILABLE_COLOURS[i] == true);
+            }
+        }
+        return false;
     }
 
     /**
      * Gives this instance a random role
      */
     public void setRandmomRole() {
+        Random r = new Random();
+        int select = 0;
+        do {
+          // get a random number between 0 and ROLES.length - 1
+          // https://stackoverflow.com/questions/2444019/how-do-i-generate-a-random-integer-between-min-and-max-in-java
+          select = r.nextInt(ROLES.length - 1); 
+        } while(!isRoleAvailable(ROLES[select]));
+        this.role = ROLES[select];
+    }
 
+    private boolean isRoleAvailable(String role) {
+        // TODO: Build the rules for roles
+        return true;
     }
 
     /**

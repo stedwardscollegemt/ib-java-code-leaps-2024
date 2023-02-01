@@ -81,7 +81,7 @@ public class AmongUs {
           // get a random number between 0 and WARDROBE.length - 1
           // https://stackoverflow.com/questions/2444019/how-do-i-generate-a-random-integer-between-min-and-max-in-java
           select = r.nextInt(WARDROBE.length - 1); 
-        } while(!isColourAvailable(WARDROBE[select])); // 
+        } while(!isColourAvailable(WARDROBE[select])); 
         this.colour = WARDROBE[select];
         AVAILABLE_COLOURS[select] = false;
     }
@@ -89,7 +89,7 @@ public class AmongUs {
     private boolean isColourAvailable(String colour) {
         // perform linear search on colour to get index
         for(int i = 0; i < WARDROBE.length; i++) {
-            if (WARDROBE[i].equals(colour)) {
+            if (WARDROBE[i].equals(colour)) { // am i currently in the colour i am looking for?
                 return (AVAILABLE_COLOURS[i] == true);
             }
         }
@@ -111,8 +111,12 @@ public class AmongUs {
     }
 
     private boolean isRoleAvailable(String role) {
-        // TODO: Build the rules for roles
-        return true;
+        for (int i = 0; i < ROLES.length; i++) {
+            if (ROLES[i].equals(role)) {
+                // TODO: return if it is available
+            }
+        }
+        return false;
     }
 
     /**

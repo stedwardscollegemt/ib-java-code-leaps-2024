@@ -22,6 +22,10 @@ public class LinearSearch {
         return -1; // not found because -1 is not an index that exists
     }
 
+    public static int[][] search2D(int[][] numarr, int target) {
+        // TODO
+    }
+
     public static int search(String[] strarr, String target) {
         return -1;
     }

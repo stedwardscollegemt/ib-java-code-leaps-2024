@@ -7,7 +7,10 @@ public class AmongUsFactory {
     public static void main(String[] args) {
         // Example of using the "plain cookie cutter" constructor
         // What AmongUs colour do we get?
-        AmongUs randomAstronaut = new AmongUs();
+        for (int i = 0; i < 5; i++) {
+            AmongUs randomAstronaut = new AmongUs();
+            allCrew[0] = randomAstronaut;
+        }
         System.out.println("");
     }
 

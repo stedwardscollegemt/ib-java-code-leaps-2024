@@ -27,9 +27,7 @@ public class AmongUs {
         "Shapeshifter", "Guardian Angel"
     };
 
-    public static final int CREW_MAX = 10;
-
-    public static final int IMPOSTER_MAX = 2;
+    public static int[] playerTracker = {0, 0, 0, 0, 0, 0, 0};
 
     private static boolean[] AVAILABLE_COLOURS = {
         true, true, true,
@@ -113,10 +111,29 @@ public class AmongUs {
     private boolean isRoleAvailable(String role) {
         for (int i = 0; i < ROLES.length; i++) {
             if (ROLES[i].equals(role)) {
-                // TODO: return if it is available
+                switch (ROLES[i]) {
+                    case "Imposter" : {
+                        if (playerTracker[i] < 2) {
+                            return true; // the role of Imposter is available, because we did not hit a max
+                        }
+                    }
+                    case "Crew" : {
+                        return true;
+                    }
+                    case "Ghost" : {
+                        return false;
+                    }
+                    default : {
+                        if (playerTracker[i] < 1) {
+                            return true;
+                        } else {
+                            return false;
+                        }
+                    }
+                }
             }
         }
-        return false;
+        return false; // i think this is unreachable
     }
 
     /**

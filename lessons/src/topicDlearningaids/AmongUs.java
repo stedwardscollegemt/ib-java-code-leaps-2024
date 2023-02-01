@@ -50,7 +50,7 @@ public class AmongUs {
      */
     public AmongUs() {
         setRandomColour();
-        // TODO: continue to initialise the state
+        setRandmomRole();
     }
 
     /**
@@ -106,6 +106,7 @@ public class AmongUs {
           select = r.nextInt(ROLES.length - 1); 
         } while(!isRoleAvailable(ROLES[select]));
         this.role = ROLES[select];
+        playerTracker[select] = playerTracker[select] + 1;
     }
 
     private boolean isRoleAvailable(String role) {

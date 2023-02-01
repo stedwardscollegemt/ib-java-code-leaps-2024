@@ -20,10 +20,16 @@ public class NoughtsAndCrosses {
         grid[0][2] = 'X';
 
         // display grid with winning X streak
-        displayGrid();
-        System.out.println("Horizontal Check Row 0: " + horizontalCheck(0, 'X'));
+        // displayGrid();
+        // System.out.println("Horizontal Check Row 0: " + horizontalCheck(0, 'X'));
 
-        // TODO: filling the first col with noughts
+        // filling the first diagonal with noughts
+        grid[0][2] = 'X';
+        grid[1][1] = 'O';
+        grid[2][0] = 'O';
+        displayGrid();
+        System.out.println("Diagonal Check: " + diagonalCheck('O'));
+
         // TODO: display grid with winning O streak
     }
 
@@ -70,22 +76,22 @@ public class NoughtsAndCrosses {
     }
 
     public static boolean diagonalCheck(char symbol) {
-        char middle = grid[1][1];
-        if (middle != symbol) {
-            return false;
-        }
-        // extreme checks
+        boolean winRight = true;
+        boolean winLeft = true;
         for (int row = 0; row < grid.length; row++) {
             for (int col = 0; col < grid[0].length; col++) {
-
-                // looking at symbol
-                // checking if it is what i am looking for
-                if (grid[row][col] != symbol) {
-                    break; // todo we need to check
+                if (row == col) {
+                    if (grid[row][col] != symbol) {
+                        winRight = false;
+                    }
+                } else if ((row + col) == grid.length - 1) {
+                    if (grid[row][col] != symbol) {
+                        winLeft = false;
+                    }
                 }
             }
         }
-        return true;
+        return winRight || winLeft;
     }
 
     public static boolean isWinningMove(int index, char symbol) {

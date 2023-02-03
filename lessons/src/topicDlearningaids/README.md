@@ -10,8 +10,8 @@
 | **Instance** | The variable that stores a single object in memory that retains the state during a program's lifetime. This is created using the `new` keyword e.g. `Soldier jack = new Soldier();`. In this case `jack` is an instance of `Soldier`. |
 | **Members** | The *attributes* and *methods* of a class. |
 | **Method** | The code that defines behaviour of a class normally contains a verb like `changeWeapon()` or `respawn()`. |
-| **Object-Oriented Programming (OOP)** | An approach to designing and building applications that are flexible, natural, well-crafted, and testable by focusing on objects that interact cleanly with one another. |
-| **Static** | 
+| **Object-Oriented Programming (OOP)** | An approach to designing and building applications that are flexible, natural, well-crafted, and testable by focusing on objects that interact cleanly with one another. This SOLID approach summarises the principles of this paradigm. |
+| **Static** | A member of a class that is not tied to a particular instance because it does not describe a state or define a behaviour. Static values and methods can be accessed through the class name.
 
 ## Exam Style Question
 

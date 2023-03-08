@@ -23,9 +23,9 @@ public class PancakeStack {
         if (!isFull()) {
             // create the pancake
             Pancake p = new Pancake();
+            size++;
             int pos = stack.length - size;
             stack[pos] = p;
-            size++;
         }
     }
 

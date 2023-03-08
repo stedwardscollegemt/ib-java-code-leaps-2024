@@ -1,5 +1,13 @@
 package topic05learningaids.stacks;
 
+/**
+ * 5.1.10 Arrays as static stacks
+ * "As with any abstract data type, 
+ *  a stack can be implemented with a variety of data structures, 
+ *  such as a linked list or an array. A stack has a variety of applications 
+ *  such as in reversing the order of elements, evaluating polish strings, etc."
+ * https://brilliant.org/wiki/stacks/
+ */
 public class PancakeStack {
 
     /**

@@ -24,11 +24,11 @@ public class NoughtsAndCrosses {
         // System.out.println("Horizontal Check Row 0: " + horizontalCheck(0, 'X'));
 
         // filling the first diagonal with noughts
-        grid[0][2] = 'X';
+        grid[0][2] = 'O';
         grid[1][1] = 'O';
         grid[2][0] = 'O';
         displayGrid();
-        System.out.println("Diagonal Check: " + diagonalCheck('O'));
+        System.out.println("Diagonal Check: " + diagonalCheck2('O'));
 
         // TODO: display grid with winning O streak
     }
@@ -97,4 +97,49 @@ public class NoughtsAndCrosses {
     public static boolean isWinningMove(int index, char symbol) {
         return diagonalCheck(symbol) || verticalCheck(index, symbol) || horizontalCheck(index, symbol);
     }
+
+    public static boolean diagonalCheck2(char symbol) {
+        char middle = grid[1][1];
+        if (middle != symbol) {
+            return false;
+        }
+
+        // extreme checks
+        if (diagonalCheck2(symbol) == false){
+            if (verticalCheck(symbol, symbol) == false){
+
+        for (int row = 0; row < grid.length; row++) {
+            for (int col = 0; col < grid[0].length; col++) {
+
+                // looking at symbol
+                // checking if it is what i am looking for
+                if (grid[row][col] != symbol) {
+                    for (int rowInverted = 3; rowInverted < grid.length; row--) {
+                        for (col = 0; col < grid[0].length; col++){
+                            if (grid[rowInverted][col] != symbol) {
+                                return false;
+                               
+                            }else{
+                                return true;
+                            }
+
+                        }
+                        break;
+                    }
+                    break;
+                }else{
+                    return true;
+               
+                }
+            }
+        }
+
+        }else{
+
+         }
+    }else{
+
+    }
+        return true;
+}
 }

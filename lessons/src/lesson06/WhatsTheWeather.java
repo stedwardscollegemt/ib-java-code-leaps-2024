@@ -2,6 +2,9 @@ package lesson06;
 
 import helpers.Keyboard;
 
+/**
+ * 
+ */
 public class WhatsTheWeather {
     
     public static void main(String[] args) {
@@ -43,5 +46,7 @@ public class WhatsTheWeather {
 
         // data entry is complete
         System.out.println("Thank you for recording the data.");
+
+        // TODO: A simple data report
     }
 }

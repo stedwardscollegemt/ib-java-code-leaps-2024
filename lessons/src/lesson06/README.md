@@ -12,6 +12,10 @@ Every piece of data in an array is often referred to as an *element*.
 - 4.2.3 Discuss an algorithm to solve a specific problem.
 - 4.3.13 Construct algorithms using predefined sub-programmes and onedimensional arrays.
 
+<b>HL Extension</b>
+- 5.1.4 Describe the characteristics of a twodimensional array.
+- 5.1.5 Construct algorithms using two-dimensional arrays.
+
 ## 6.2 Creating an array
 
 Declaring an array in Java is not much different to declaring a single variable, there is just one slight difference to indicate that there will be "many" of the stated type.

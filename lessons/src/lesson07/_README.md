@@ -85,6 +85,18 @@ System.out.println(jack.health); // should print out 3
 
 But don't worry too much about this point because we will be diving into OOP slowly. For now, we want to get comfortable with the basics.
 
+## 7.6 Strings
+
+Java treats a datum like `"Ms. Camilleri"` which we refer to as <b>text</b> as an object that is composed of a collection (array) of characters or bytes (recall that a single ASCII character can be represented in a byte). 
+
+For textual data, Java offers a powerful utility class (template) called `String`. To store textual data in memory then you need to instasiate a `new` object like so:
+
+```
+String myName = new String(); // very similar to our soldier example
+```
+
+
+
 ## Some tips
 
 - A class should define one and only one logical entity. Putting a lot of unrelated information in a single object goes against the principle.

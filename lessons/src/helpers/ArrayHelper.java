@@ -228,4 +228,14 @@ public class ArrayHelper {
         }
         System.out.println();
     }
+
+    public double[] bubbleSort2(double[] arr) {
+        for(int pass = 0; pass < arr.length - 1; pass++) {
+            for(int current = 0; current < arr.length - 1; current++) {
+                if (arr[current] < arr[current + 1]) {
+                    // todo...
+                }
+            }
+        }
+    }
 }

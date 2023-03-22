@@ -2,15 +2,33 @@ package topic05learningaids.queues;
 
 public class Message {
     
-    private String title;
+    /**
+     * --- Attributes (State) ----
+     */
+    String title;
 
-    private String body;
+    String body;
 
-    private String contact;
+    String contact;
 
+    boolean isRead;
+
+    /**
+     * 
+     * @param title
+     * @param body
+     * @param contact
+     */
     public Message(String title, String body, String contact) {
         this.title = title;
         this.body = body;
         this.contact = contact;
+    }
+
+    /**
+     * --- Behaviour --------------------------
+     */
+    public void read() {
+        this.isRead = true;
     }
 }

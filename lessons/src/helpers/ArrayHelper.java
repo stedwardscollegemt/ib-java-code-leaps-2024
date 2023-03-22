@@ -204,6 +204,20 @@ public class ArrayHelper {
         return arr;
     }
 
+    public static double[] bubbleSort2(double[] arr) {
+        for(int pass = 0; pass < arr.length - 1; pass++) {
+            for(int current = 0; current < arr.length - 1; current++) {
+                if (arr[current] > arr[current + 1]) {
+                    // swap
+                    double temp = arr[current];
+                    arr[current] = arr[current+1];
+                    arr[current+1] = temp;
+                }
+            }
+        }
+        return arr;
+    }
+
     public static void printElements(int[] arr) {
         for(int e : arr) {
             System.out.print(e + ", ");
@@ -227,15 +241,5 @@ public class ArrayHelper {
             System.out.print(e + ", ");
         }
         System.out.println();
-    }
-
-    public double[] bubbleSort2(double[] arr) {
-        for(int pass = 0; pass < arr.length - 1; pass++) {
-            for(int current = 0; current < arr.length - 1; current++) {
-                if (arr[current] < arr[current + 1]) {
-                    // todo...
-                }
-            }
-        }
     }
 }

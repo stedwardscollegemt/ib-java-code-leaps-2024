@@ -244,14 +244,25 @@ public class ArrayHelper {
     }
 
     public int binarySearch(int[] arr, int key) {
+        
+        // todo: check that the arr is in ascending order!
+        // throw an exception (link to topic 4 thinking ahead)
+        
         int start = 0;
         int end = arr.length;
 
-        // todo: code for the binary search
+        // code for the binary search
         while(start <= end) {
-            
+            int mid = (start + end) / 2;
+            if (arr[mid] == key) {
+                return mid;
+            } else if (arr[mid] < key) {
+                start = mid + 1;
+            } else {
+                end = mid - 1;
+            }
         }
-        return 0;
+        return -1; // return an impossible value (key not found)
     }
 
     public int[] selectionSort(int[] arr) {

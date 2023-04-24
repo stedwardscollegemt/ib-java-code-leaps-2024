@@ -266,7 +266,21 @@ public class ArrayHelper {
     }
 
     public int[] selectionSort(int[] arr) {
-        // todo: code for the selection sort
+        for (int current = 0; current < arr.length - 2; current ++) { // sorted part (red)
+            // set the red pointer (my current min)
+            int min = current;
+            for (int counter = (current + 1); counter < arr.length; counter ++) {
+                // the blue pointer is on a mission
+                if (arr[counter] < arr[min]) {
+                    min = counter;
+                }
+            }
+
+            // was the blue pointer mission successful?
+            if (min != current) {
+                // todo: swap min and current positions in arr (same as the bubble sort)
+            }
+        }
         return arr;
     }
 }

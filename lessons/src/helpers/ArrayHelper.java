@@ -242,4 +242,20 @@ public class ArrayHelper {
         }
         System.out.println();
     }
+
+    public int binarySearch(int[] arr, int key) {
+        int start = 0;
+        int end = arr.length;
+
+        // todo: code for the binary search
+        while(start <= end) {
+            
+        }
+        return 0;
+    }
+
+    public int[] selectionSort(int[] arr) {
+        // todo: code for the selection sort
+        return arr;
+    }
 }

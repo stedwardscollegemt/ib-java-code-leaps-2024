@@ -10,7 +10,8 @@ public class Animal {
 
     String countryOfOrigin; // e.g., Australia, Africa, Brazil
     
-    // My pointers...
+    // Meta Information for Linked List of Animal...
+    // Objects by reference
     Animal next;
 
     Animal previous;
@@ -28,8 +29,20 @@ public class Animal {
         this.previous = previous;
     }
     
-    
     /**
      * -------- Behaviour ------------------------------------
      */
+    public boolean hasNext() {
+        if (this.next != null) {
+            return true;
+        }
+        return false;
+    }
+
+    public boolean hasPrevious() {
+        if (this.previous != null) {
+            return true;
+        }
+        return false;
+    }
 }

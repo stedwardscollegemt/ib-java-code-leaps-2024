@@ -9,17 +9,22 @@ public class Student {
     /**
      * --- Attributes --------------------------
      */
-    public String name;
+    private String name;
 
-    public String surname;
+    private String surname;
 
-    public Date dob;
+    private Date dob;
 
     public int year;
 
     /**
      * --- Constructor --------------------------
      */
+    public Student(String name, String surname, Date dob) {
+        this.name = name;
+        this.surname = surname;
+        this.dob = dob;
+    }
 
     /**
      * --- Behaviour --------------------------

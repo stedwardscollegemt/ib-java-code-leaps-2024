@@ -148,4 +148,8 @@ public class AmongUs {
         // TODO: https://dzone.com/articles/how-to-format-a-string-clarified
         return "";
     }
+
+    public void display() {
+
+    }
 }

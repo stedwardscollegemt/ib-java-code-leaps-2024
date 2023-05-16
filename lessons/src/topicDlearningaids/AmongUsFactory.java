@@ -9,7 +9,7 @@ public class AmongUsFactory {
         // What AmongUs colour do we get?
         for (int i = 0; i < 5; i++) {
             AmongUs randomAstronaut = new AmongUs();
-            allCrew[0] = randomAstronaut;
+            allCrew[i] = randomAstronaut;
         }
         System.out.println("");
     }

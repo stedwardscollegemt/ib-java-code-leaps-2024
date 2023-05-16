@@ -199,7 +199,6 @@ public class ArrayHelper {
                 j++;
             }
             iterations++;
-            printElements(arr);
         }
         return arr;
     }
@@ -275,7 +274,6 @@ public class ArrayHelper {
                     min = counter;
                 }
             }
-
             // was the blue pointer mission successful?
             if (min != current) {
                 // todo: swap min and current positions in arr (same as the bubble sort)

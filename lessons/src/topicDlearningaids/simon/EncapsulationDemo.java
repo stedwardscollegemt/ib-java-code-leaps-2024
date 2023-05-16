@@ -9,8 +9,7 @@ public class EncapsulationDemo {
     public static void main(String[] args) {
         
         // todo: Create an instance of a student
-        Student simon = new Student();
-        simon.dob = new Date(123213);
-        simon.name = "Not Simon";
+        Student simon = new Student("Simon", "Grech", new Date(123213));
+        
     }
 }

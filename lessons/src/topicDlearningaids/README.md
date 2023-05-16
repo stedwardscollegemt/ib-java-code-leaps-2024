@@ -11,6 +11,9 @@
 | **Members** | The *attributes* and *methods* of a class. |
 | **Method** | The code that defines behaviour of a class normally contains a verb like `changeWeapon()` or `respawn()`. |
 | **Object-Oriented Programming (OOP)** | An approach to designing and building applications that are flexible, natural, well-crafted, and testable by focusing on objects that interact cleanly with one another. This SOLID approach summarises the principles of this paradigm. |
+| **Relationship** | A relationship between two or more objects defines how these objects will interact or collaborate in a context of a real-world problem. Many times, the relationship tries to model the actual real-world relationship. There are four main types: "uses", "has a", "is a" and "behaves like a". Defining too many relationships can make the solution much more complex.
+| **Single Responsibility** | One of the five principles in SOLID. A module or a class should only have one reason to change and should only have one main goal to achieve.
+| **SOLID** |  A mnemonic acronym for five design principles intended to make object-oriented designs more understandable, flexible, and maintainable.
 | **Static** | A member of a class that is not tied to a particular instance because it does not describe a state or define a behaviour. Static values and methods can be accessed through the class name.
 
 ## Exam Style Question

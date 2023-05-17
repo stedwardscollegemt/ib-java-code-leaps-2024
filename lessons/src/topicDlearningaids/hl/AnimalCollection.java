@@ -5,12 +5,17 @@ public class AnimalCollection {
      /**
      * -------- Attributes ------------------------------------
      */
+    Animal headAnimal;
 
+    Animal currentAnimal;
 
     /**
     * -------- Constructor ------------------------------------
     */ 
-    public AnimalCollection() {}
+    public AnimalCollection(Animal headAnimal) {
+        this.headAnimal = headAnimal;
+        this.currentAnimal = headAnimal;
+    }
 
 
     /**
@@ -39,6 +44,9 @@ public class AnimalCollection {
     }
     
     // nice perks we want to add for developer, in exams these require 
+    public Animal getHead() {
+        return this.headAnimal;
+    }
     /**
      * It gets the last item in the Animal collection
      * @return
@@ -48,6 +56,9 @@ public class AnimalCollection {
     }
 
     public boolean isEmpty() {
-        return true;
+        if (this.headAnimal == null) {
+            return true;
+        }
+        return false;
     }
 }

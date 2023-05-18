@@ -1,5 +1,8 @@
 package topicDlearningaids.hl;
 
+/**
+ * Link to D.4.10
+ */
 public class Animal {
     
     /**
@@ -17,9 +20,8 @@ public class Animal {
     Animal previous;
 
     private Animal head;
-
-
-   /**
+   
+    /**
      * -------- Constructor ------------------------------------
      */ 
     public Animal (String name, String countryOfOrigin, Animal next, Animal previous, boolean isHead) {

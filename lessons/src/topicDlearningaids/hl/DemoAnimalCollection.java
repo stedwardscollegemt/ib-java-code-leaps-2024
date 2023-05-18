@@ -1,15 +1,8 @@
 package topicDlearningaids.hl;
 
-import java.util.ArrayList;
-import java.util.Iterator;
+public class DemoAnimalCollection {
 
-/**
- * Link to D.4.11
- * 
- */
-public class DemoCollectionLibraryJETS {
-    
-    static ArrayList<Animal> testMyAnimalCollection;
+    static AnimalCollection testMyAnimalCollection;
 
     static int totalTests = 0;
     
@@ -31,8 +24,9 @@ public class DemoCollectionLibraryJETS {
 
     public static void testIsEmptyTrue() {
         // When I create an Animal Collection
-        ArrayList<Animal> emptyAnimalCol = new ArrayList<Animal>();
-        // But not add anything to the collection
+        AnimalCollection emptyAnimalCol;
+        // But pass in null as the head
+        emptyAnimalCol = new AnimalCollection(null);
         // Then isEmpty should give me True
         if (emptyAnimalCol.isEmpty()) {
             System.out.print("P. "); // and the test passes
@@ -46,29 +40,26 @@ public class DemoCollectionLibraryJETS {
     public static void testIsEmptyFalse() {
         // When I create an Animal Collection
 
-        // But add in Animal object "Persian Cat" as the head
+        // But pass in an Animal object "Persian Cat" as the head
 
         // Then isEmpty should give me False
     }
 
     public static void testLinearSearchEmptyList() {
         // Given I have an empty linked list
-        ArrayList<Animal> myEmptyAnimalCol = new ArrayList<Animal>();
+        AnimalCollection myEmptyAnimalCol = new AnimalCollection(null);
         
         // Given I have an animal
         Animal targetAnimal = new Animal("Persian Cat", "Egypt", null, null, false);
 
-        // And that animal is not in the list
-       
         // When I search for my animal...
         boolean isFound = false;
         {
             // reset to the head
-            Iterator<Animal> iterator = myEmptyAnimalCol.iterator();
-            
+            myEmptyAnimalCol.resetNext();
             // looping through my collection
-            while (iterator.hasNext()) {
-                Animal nextAnimal = iterator.next();
+            while (myEmptyAnimalCol.hasNext()) {
+                Animal nextAnimal = myEmptyAnimalCol.getNext();
                 if (nextAnimal.name == targetAnimal.name) {
                     System.out.println("I have found my animal!");
                     isFound = true;
@@ -82,7 +73,6 @@ public class DemoCollectionLibraryJETS {
         } else {
             System.out.print("F. ");
         }
-        
         totalTests++;
     }
 }

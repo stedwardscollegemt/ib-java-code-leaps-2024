@@ -1,20 +1,23 @@
 package topicDlearningaids.hl;
 
+/**
+ * Link to D.4.10
+ */
 public class AnimalCollection {
-    
-     /**
+    /**
      * -------- Attributes ------------------------------------
      */
-    Animal headAnimal;
+    private Animal headAnimal;
 
-    Animal currentAnimal;
+    // our iterator of type Animal because it is self-referential
+    private Animal iteratorAnimal;
 
     /**
     * -------- Constructor ------------------------------------
     */ 
     public AnimalCollection(Animal headAnimal) {
         this.headAnimal = headAnimal;
-        this.currentAnimal = headAnimal;
+        this.iteratorAnimal = headAnimal;
     }
 
 

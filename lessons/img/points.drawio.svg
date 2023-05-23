@@ -1,0 +1,64 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="171px" height="264px" viewBox="-0.5 -0.5 171 264" content="&lt;mxfile&gt;&lt;diagram id=&quot;GAntzw65G5uY2IswPQW8&quot; name=&quot;Page-1&quot;&gt;7VZdb9owFP01kdhDp3xA2z1C6LpJ7VSNatMeTXJJrDp2ZJtC+ut3HduEEOhYu8dJVWUfH1/73nN8SZCk1fZWkrq8FzmwIA7zbZDMgzhOrkL8b4DGAfHYAoWkuYWiDljQF3Cg21esaQ6qR9RCME3rPpgJziHTPYxIKTZ92kqw/qk1KWAALDLChuhPmuvSotfxVYd/AVqU/uTo8pNdqYgnu0xUSXKx2YOSmyBJpRDajqptCszUztfF7vt8YnV3MQlcn7MhthueCVu73B4E5Vq52+nGp6w2tGKE42y2Elwv3EqEc8JowXGc4ZkgEXgGqSlWa+oWtKgRzUrK8jvSiLW5mdIke/KzWSkkfcGwhLmYuCy1Ez6+7DEWZifCIaISFHIefLrRAXRPtj3iHVHaAZlgjNSKLndpVEQWlM+E1qJyJFccTAe2Jwsc7WRDu4OoQMsGKW6Dt3rTn24620QeK/csE186kDirFrvInZo4cIIeFzcZiHthPAjVEuRX5ExxttCS8iLAGsdJZHK+aB8T1tkZoWXh6ICyFHytXqeghnqtvhl7nzzJcWCrfwGRrxAJYz+oov40N57Mgsl84FVUS7cekuIJUsEEBp5zYc1LGTuAvH8ZrPRJ96qaZHiru5YzH3fIdyeagQTuXbH2PZc0z4Eb52EtNbE2M8nUrmbz9vIzlDkNP07aNFKcR90c/wxd6lRwzIXQ1nGAHt6A8fF59oyP27PxPjvPj1E4fr8fxwM/DqRjtJXESud7a/Qm3SpUgEEn1KPRcX4RDcRMhmImR4RjZAn4KNB3VJj40nIPBP2TZn1TUl6CpP9Iyyg5s7lcv1/KyREpMYfQdoSRfcIf9t7wkWVj+LZvDHkF6Kl/8CPLCHsP/3ADyfN2ZWTXhxGpusVf+VEXaIkfDED4gIgOytaMaHjsmuBoGC8njbqnSmEee0HbJvi/G73dwddntiPfOv7Cwzjtvqvatb2P0+TmNw==&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs>
+        <clipPath id="mx-clip-4-31-162-104-0">
+            <rect x="4" y="31" width="162" height="104"/>
+        </clipPath>
+        <clipPath id="mx-clip-4-143-162-122-0">
+            <rect x="4" y="143" width="162" height="122"/>
+        </clipPath>
+    </defs>
+    <g>
+        <path d="M 0 26 L 0 0 L 170 0 L 170 26" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 0 26 L 0 260 L 170 260 L 170 26" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 0 26 L 170 26" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" font-weight="bold" pointer-events="none" text-anchor="middle" font-size="12px">
+            <text x="84.5" y="17.5">
+                Points
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-4-31-162-104-0)" font-size="12px">
+            <text x="5.5" y="43.5">
+                - memberId: String
+            </text>
+            <text x="5.5" y="57.5">
+                - totalPoints: int
+            </text>
+            <text x="5.5" y="71.5">
+                - bonusPoints: int
+            </text>
+            <text x="5.5" y="85.5">
+                - statusNow: String
+            </text>
+            <text x="5.5" y="99.5">
+                - statusNextYear: String
+            </text>
+            <text x="5.5" y="113.5">
+                - allVisits: Visits[]
+            </text>
+        </g>
+        <path d="M 0 134 L 170 134" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-4-143-162-122-0)" font-size="12px">
+            <text x="5.5" y="155.5">
+                + Points(String)
+            </text>
+            <text x="5.5" y="169.5">
+                + Points(String, int)
+            </text>
+            <text x="5.5" y="183.5">
+                + getAllVisits(int) : Visits
+            </text>
+            <text x="5.5" y="197.5">
+                + addVisit(Visits)
+            </text>
+            <text x="5.5" y="211.5">
+                + isGold() : boolean
+            </text>
+            <text x="5.5" y="225.5">
+                + calculateTotalPoints()
+            </text>
+            <text x="5.5" y="239.5">
+                + daysMissing() : int
+            </text>
+        </g>
+    </g>
+</svg>

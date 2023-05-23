@@ -41,5 +41,76 @@ Same like eating a potatoe, bake it with the skin on and get all the nutritional
 
 A standard visual way of representing the architecture of a software system that makes use of the OOP paradigm. It is not dependant on knowing a single programming language. It concisely and accurately illustrates the relationships and dependencies between modules of a system. The best way of learning SOLID OOP is by interpreting *well* designed UML diagrams. From a UML, it is then very easy to translate it to object-oriented code. Writing SOLID code cold turkey is very difficult to do and it is not recommended.
 
+If you are in a programming team that all know UML then you could use this as a tool for technical and architecture discussions (although from my experience very few are proficient since it is so vast).
+
 ## 8.2 Designing Classes using UML Notation
+
+We already <b>outlined the nature of an object instance</b> as follows:
+- Unique Memory Reference
+- State through attributes/member variables
+- Behaviour through actions/member methods
+
+Although a UML diagram is simply a drawing therefore it does not really represent one particular instance but it does define the nature of an object class/template which <b>does not quite have a unique memory reference</b>. So in the UML you include the <b>state</b> definition and the <b>behaviour signatures</b>.
+
+## 8.3 Implementing Classes in Java
+
+### OOP Features. Four Pillars: Abstraction, Encapsulation, Inheritence and Polymorphism
+
+<u>Abstraction</u>
+
+The *thinking abstractly* aspect of computational thinking (link to Topic 4) is one of the main pillars of this paradigm. In the early days we explained that we design object templates (classes) to only contain <b>the most significant characteristics</b> of real-world entities. It is true that a `Soldier` (in lesson 7) instance in the complex game would probably have a "look" and a "personality" but that kind of complexity is eliminated because at the time those details did not seem relevant to the solution we were desinging.
+
+SOLID Relevance: Single Responsibility, Open-closed, Liskov Substitution Principle.
+
+Advantages: Manages complexity; easily reused; makes code more secure.
+
+<u>Encapsulation</u>
+
+After you successfully used <b>Abstraction</b>, always using SOLID principles as a very good guideline, then as a developer you can configure the way the object can be used. You have full control of what should be allowed and not allowed with the object. We can choose to <b>hide</b> or <b>contain</b> complexity within that class. 
+
+For example, if we created a `Student` class (keeping in mind S, O and L) does it make sense to be able to modify the...
+- `name`
+- `dateOfBirth`?
+
+Probably not. Yes, we want to be able to offer the possibility of instansiating a `Student` with a particular `name` or `dateOfBirth` but then, once the state is set giving the possibility to change them can have grave repurcussions. Therefore, we would want to <b>hide that information</b>, allow *read access*, but, severely limit the possibility of *write access* to the `Student` class only.
+
+We control this by making use of *access modifiers* in Java: `public`, `private` and `protected`.
+
+| **Access Modifier** | UML Symbol | Meaning |
+|---|---|---|
+|`public`| + | Members tagged as such are visible to all other classes, therefore they can be accessed. |
+|`private`| - | Members tagged as such are hidden to all other classes, therefore they cannot be accessed by them, and they can only be used within their class. |
+|`protected`| # | Members tagged as such are accessible to classes within the same package/folder OR to classes that have the "is-a" relationship. |
+
+So for the case of our `Student` we want to set `name` and `dateOfBirth` as `private` but give read access by providing `public` <b>accessor methods</b> that simple `return` the value of the attributes. 
+
+```
+public class Student {
+    
+    private String name;
+    private Date dateOfBirth;
+
+    public Student(String name, Date dateOfBirth) {
+        this.name = name;
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    // Give read access only
+    public String getName() {
+        return this.name;
+    }
+
+    public Date getDateOfBirth() {
+        return this.dateOfBirth;
+    }
+}
+```
+### Minor OOP Features: Overloading and Overriding 
+
+
+## 8.4 The static Keyword
+
+## 8.7 Passing Objects as Parameters
+
+
 

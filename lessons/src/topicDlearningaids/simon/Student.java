@@ -3,7 +3,8 @@ package topicDlearningaids.simon;
 import java.util.Date;
 
 /**
- * Encapsulation: public, protected, private
+ * D.1.8 Construct related objects for a given problem
+ * D.2.1 + D.3.3 Encapsulation: public, protected, private
  */
 public class Student {
     /**

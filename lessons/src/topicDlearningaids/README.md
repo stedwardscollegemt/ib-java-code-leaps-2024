@@ -4,7 +4,8 @@
 
 | **Term** | Meaning |
 |---|---|
-| **Attribute** | A characteristic of an object defined in the class e.g. in a class called `Person` a property can be `eyeColour`. |
+| **Astraction** | An OOP feature. Refers to only including relevant data in an object to keep things simple. Very important to keep in mind S, O and L in SOLID. |
+| **Attribute** | A characteristic (member variable) of an object defined in the class e.g. in a class called `Person` a property can be `eyeColour`. |
 | **Class** | A code file which acts as the blueprint, or cookie cutter, of an object by specifying the properties (characteristics) that and methods (behaviour). |
 | **Constructor** | The special method that is invoked using the `new` keyword when creating an *instance* of a *class*. Must share the same name of the class. |
 | **Encapsulation** | An OOP feature. Refers to the grouping of attributes and methods in a class. Very important to keep in mind S in SOLID - Single Responsibility, which IB broadly refers to as *modularity*. Access to attributes and methods can be controlled using the keywords *public*, *private* and *protected*. Most of the time developers simply summarize this as "information hiding" to strongly imply that complexity is managed (by thinking abstractly and only exposing attributes and methods that really matter). <a href="https://pianalytix.com/concept-of-encapsulation-in-java/">Remember the capsule pill analogy.</a> |

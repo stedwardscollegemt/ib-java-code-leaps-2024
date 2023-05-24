@@ -107,6 +107,45 @@ public class Student {
 <b>SOLID Relevance: Interface Segregation.</b>
 <b>SOLID Advantages: Manages complexity; easily reused; makes code more secure; design and use an object within a contract of behaviour.</b>
 
+<ins>Inheritence</ins>
+
+Inheritance is the sharing of attributes and methods among classes by using the `extends` keyword in Java. We can take one class, and then define other classes based on the first one. The new classes inherit all the attributes and methods of the first one, but may have attributes and methods
+of their own. The new classes are able to access any `protected` attributes as though they have been defined within that class.
+
+This defined the "is-a" relationship and perhaps one of the most easiest to grasp and explain.
+
+1. Lions, tigers and persians are different animals but they are all *Cats*.
+2. Squares, triangles and circles have different mathematical properties but they are all *Shapes*.
+3. Ford, BMW, Lamborghini come from different manufacturers but they are all *Cars*.
+
+The above implies that even though objects are different, at the core they are grouped because they share some fundamental concepts.
+
+A cat is a cat because an animal is: nocturnal, territorial, solitary, predatory and maternal-sexual.
+
+A shape is a shape because a continuous line is eventually closed forming a boundary.
+
+A car is a car because it is a wheeled vehicle for the purpose of transportation.
+
+```
+public class Lion extends Cat { ... }
+
+public class Ford extends Car { ... }
+
+public class Circle extends Shape { ... }
+```
+
+Inheritance allows the sharing of attributes and methods among different classes. In the examples above, `Lion` will *inherit* all the attributes and methods defined in `Cat`. 
+
+When something is this easy to understand, it is tempting to define such strong dependencies in the code, but beware, because the examples given do not quite obey SOLID principles. When you want to use this feature always keep in mind <b>Interface Segregation</b> and <b>Open-closed</b>. A class that is designed to be inherited from should be generic, and describe a *contract of business*. 
+
+Example:
+
+<img src="https://raw.githubusercontent.com/stedwardscollegemt/ib-java-code-leaps-2024/5f97b066d825103fc3fef5ee67365a8f38a3f513/lessons/img/inheritence_example.jpg">
+
+
+
+
+
 ### Minor OOP Features: Overloading and Overriding 
 
 

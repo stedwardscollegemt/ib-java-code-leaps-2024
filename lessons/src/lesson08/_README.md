@@ -140,7 +140,7 @@ When something is this easy to understand, it is tempting to define such strong 
 
 Example:
 
-<img src="https://raw.githubusercontent.com/stedwardscollegemt/ib-java-code-leaps-2024/5f97b066d825103fc3fef5ee67365a8f38a3f513/lessons/img/inheritence_example.jpg">
+<img src="https://raw.githubusercontent.com/stedwardscollegemt/ib-java-code-leaps-2024/main/lessons/img/inheritence_example.jpg">
 
 
 

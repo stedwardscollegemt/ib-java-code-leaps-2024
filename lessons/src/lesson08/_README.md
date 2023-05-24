@@ -56,15 +56,14 @@ Although a UML diagram is simply a drawing therefore it does not really represen
 
 ### OOP Features. Four Pillars: Abstraction, Encapsulation, Inheritence and Polymorphism
 
-<u>Abstraction</u>
+<ins>Abstraction</ins>
 
 The *thinking abstractly* aspect of computational thinking (link to Topic 4) is one of the main pillars of this paradigm. In the early days we explained that we design object templates (classes) to only contain <b>the most significant characteristics</b> of real-world entities. It is true that a `Soldier` (in lesson 7) instance in the complex game would probably have a "look" and a "personality" but that kind of complexity is eliminated because at the time those details did not seem relevant to the solution we were desinging.
 
-SOLID Relevance: Single Responsibility, Open-closed, Liskov Substitution Principle.
+<b>SOLID Relevance: Single Responsibility, Open-closed, Liskov Substitution Principle.</b>
+<b>SOLID Advantages: Manages complexity; easily reused; makes code more secure.</b>
 
-Advantages: Manages complexity; easily reused; makes code more secure.
-
-<u>Encapsulation</u>
+<ins>Encapsulation</ins>
 
 After you successfully used <b>Abstraction</b>, always using SOLID principles as a very good guideline, then as a developer you can configure the way the object can be used. You have full control of what should be allowed and not allowed with the object. We can choose to <b>hide</b> or <b>contain</b> complexity within that class. 
 
@@ -105,6 +104,9 @@ public class Student {
     }
 }
 ```
+<b>SOLID Relevance: Interface Segregation.</b>
+<b>SOLID Advantages: Manages complexity; easily reused; makes code more secure; design and use an object within a contract of behaviour.</b>
+
 ### Minor OOP Features: Overloading and Overriding 
 
 

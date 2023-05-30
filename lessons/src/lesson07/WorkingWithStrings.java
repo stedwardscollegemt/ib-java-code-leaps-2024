@@ -5,8 +5,12 @@ import helpers.Keyboard;
 public class WorkingWithStrings {
     public static void main(String[] args) {
         
+        // How to create an (object) instance of any class
+        // The action of pressing the cookie cutter (class) against the dough (memory)
+        // to have a single shaped cookie (object instance) that is ready for baking and decorating (state and behaviour)
         String myString = new String();
         boolean endWith = myString.endsWith("s");
+        System.out.println("myString ends with 's'? " + endWith);
 
         // Declaration and assignment of strings
         String paymentTypeCard = new String("Card");
@@ -24,5 +28,12 @@ public class WorkingWithStrings {
         if (userPaymentType.equals(paymentTypeCash)) {
             System.out.println("You are paying by cash.");
         }
+
+        /**
+         * ------- Helpful String Behaviour Methods  ------------------------------------------------------------------
+         */
+        // splitting a string 
+
+
     }
 }

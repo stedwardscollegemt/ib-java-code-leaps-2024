@@ -39,7 +39,8 @@ public class AnimalCollection {
     }
 
     public void addItem(Animal item) {
-
+        Animal tail = getTail();
+        tail.next = item;
     }
 
     public void removeItem(Animal item) {
@@ -55,7 +56,11 @@ public class AnimalCollection {
      * @return
      */
     public Animal getTail() {
-        return null;
+        Animal tempIterator = this.headAnimal;
+        while (tempIterator.hasNext()) {
+            tempIterator = tempIterator.getNext();
+        }
+        return tempIterator;
     }
 
     public boolean isEmpty() {

@@ -10,7 +10,10 @@ The moment OOP becomes complex... it sucks!
 - D.1.4 Interpret UML diagrams.
 - D.1.5 Describe the process of decomposition into several objects.
 - D.1.6 Describe the relationships between objects of a given problem.
+- D.1.7 Outline the need to reduce dependencies between objects in a given problem (SOLID).
 - D.1.10 Describe how data items can be passed to and from actions as parameters.
+- D.2.1, 4 Define the term Encapsulation and Outline Advantages
+- D.2.2, 5 Define the term Inheritance and Outline Advantages
 - D.3.3 Define the terms: private, protected, public, static.
 
 # Advantages and Disadvantages of OOP

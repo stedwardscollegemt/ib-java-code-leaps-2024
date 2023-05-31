@@ -13,7 +13,6 @@ The moment OOP becomes complex... it sucks!
 - D.1.7 Outline the need to reduce dependencies between objects in a given problem (SOLID).
 - D.1.10 Describe how data items can be passed to and from actions as parameters.
 - D.2.1, 4 Define the term Encapsulation and Outline Advantages
-- D.2.2, 5 Define the term Inheritance and Outline Advantages
 - D.3.3 Define the terms: private, protected, public, static.
 
 # Advantages and Disadvantages of OOP
@@ -54,6 +53,10 @@ We already <b>outlined the nature of an object instance</b> as follows:
 - Behaviour through actions/member methods
 
 Although a UML diagram is simply a drawing therefore it does not really represent one particular instance but it does define the nature of an object class/template which <b>does not quite have a unique memory reference</b>. So in the UML you include the <b>state</b> definition and the <b>behaviour signatures</b>.
+
+Example:
+
+<img src="https://raw.githubusercontent.com/stedwardscollegemt/ib-java-code-leaps-2024/c88db5ad3d740e6c96f6a347039b089fecd0772a/lessons/img/appointment.drawio.svg"/>
 
 ## 8.3 Implementing Classes in Java
 

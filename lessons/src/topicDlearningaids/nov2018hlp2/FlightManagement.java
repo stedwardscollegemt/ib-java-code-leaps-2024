@@ -4,6 +4,8 @@ import java.util.Iterator;
 import java.util.LinkedList;
 
 public class FlightManagement {
+
+    private static Arrival[] inbound = new Arrival[200];
     
     public static void main(String[] args) {
 
@@ -23,5 +25,16 @@ public class FlightManagement {
             r1.add(current);
         }
         return r1;
+    }
+
+    public static void showDelayed(String t) {
+        // arrays love for loops
+        // for each Arrival in array
+        for(int i = 0; i < inbound.length; i++) {
+            // Revision to Topic 4 - array access
+            Arrival arrival = inbound[i];
+            // if arrival has not landed AND arrival.getETA() is less than t
+            // then output
+        }
     }
 }

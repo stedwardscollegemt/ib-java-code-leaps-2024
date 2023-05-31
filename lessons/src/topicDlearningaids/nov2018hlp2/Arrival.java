@@ -14,6 +14,11 @@ public class Arrival {
 
     // -------- Methods ---------------------------------------------------------------
 
+    public String getETA() {
+        // assume there is code
+        return "01:10"; // todo: obviously this is just an example
+    }
+
     public int compareWith(String flightId) {
         if(this.myFlight.getId().equals(flightId)) {
             return 0;
@@ -21,7 +26,14 @@ public class Arrival {
         return 1;
     }
 
-    public int compareWith(Arrival anotherArrival) {
-
+    /**
+     * compareTo is an out of the box method in the String class
+     * provided by Java.
+     * @param anotherArrival
+     * @return
+     */
+    public int compareWith(Arrival anotherArrival) { // parameters are input part
+        int result = this.getETA().compareTo(anotherArrival.getETA()); // process part
+        return result; // output part
     }
 }

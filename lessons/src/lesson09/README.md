@@ -18,7 +18,7 @@ written — either by ourselves or by someone else</ins>. For example, you have 
 
 In the last lesson we defined *Abstraction* and *Encapsulation*. Now, we obviously move on to...
 
-<ins>Inheritence</ins>
+<ins>Inheritance</ins>
 
 Inheritance is the sharing of attributes and methods among classes by using the `extends` keyword in Java. We can take one class, and then define other classes based on the first one. The new classes inherit all the attributes and methods of the first one, but may have attributes and methods of their own. The new classes are able to access any `protected` attributes as though they have been defined within that class.
 

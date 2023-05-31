@@ -3,7 +3,7 @@ package topicDlearningaids.nov2018hlp2;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-public class FileManagement {
+public class FlightManagement {
     
     public static void main(String[] args) {
 
@@ -16,7 +16,7 @@ public class FileManagement {
         
     }
 
-    public static LinkedList mergeLists(LinkedList<Arrival> r1, LinkedList<Arrival> r2) {
+    public static LinkedList<Arrival> mergeLists(LinkedList<Arrival> r1, LinkedList<Arrival> r2) {
         Iterator<Arrival> iterator = r2.iterator();
         while(iterator.hasNext()) {
             Arrival current = iterator.next();

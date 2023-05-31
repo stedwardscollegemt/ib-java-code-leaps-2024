@@ -4,7 +4,9 @@ package lesson08;
  * Copied from May 2018 SL Paper 2
  */
 public class Points {
-    
+    /**
+     * ----- Attributes (Data)--------------------------------------------------------
+     */
     private String memberId;  // id of the hotel customer
     
     private int totalPoints;  // this year's points 
@@ -19,13 +21,28 @@ public class Points {
     
     int y;                    // number of visits this year
 
-    // constructor for new member
+    /**
+     * ------ Constructors ------------------------------------------------------------------
+     */
+    // Constructor for new member
     public Points(String id)  {    
         memberId = id;    
         bonusPoints = 0;    
         y = 0;    
         statusNow  =  "Bronze";  
     }
+
+    // Constructor for existing member with points carried over
+    public Points(String id, int bp)  {    
+        memberId = id;
+        bonusPoints = bp;
+        y = 0;
+        statusNow = "Bronze";
+    }
+
+    /**
+     * ------- Methods ---------------------------------------------------------------------------
+     */
 
     // Accessor methods
     public String getMemberId() {

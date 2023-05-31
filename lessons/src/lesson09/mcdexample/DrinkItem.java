@@ -1,4 +1,4 @@
-package lesson08.mcdexample;
+package lesson09.mcdexample;
 
 public class DrinkItem {
     

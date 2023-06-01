@@ -3,27 +3,31 @@ package lesson08.dmitrii;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
+/**
+ * As per UML
+ * https://raw.githubusercontent.com/stedwardscollegemt/ib-java-code-leaps-2024/c88db5ad3d740e6c96f6a347039b089fecd0772a/lessons/img/appointment.drawio.svg
+ */
 public class Appointment {
     /**
      * --- Attributes ----------------------------
      */
-    int appointmentId;
+    private int appointmentId;
 
-    String title;
+    private String title;
 
-    String type;
+    private String type;
 
-    ArrayList<Guest> guests;
+    private ArrayList<Guest> guests;
 
-    LocalDateTime date;
+    private LocalDateTime date;
 
-    Location location;
+    private Location location;
 
-    Description description;
+    private Description description;
 
-    Calendar calendar;
+    private Calendar calendar;
 
-    ArrayList<Notification> notifications;
+    private ArrayList<Notification> notifications;
 
     /**
      * --- Constructor ---------------------------

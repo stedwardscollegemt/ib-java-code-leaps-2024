@@ -1,6 +1,6 @@
 # First Step
 
-Welcome to your first lesson. This lesson is all about breaking the ice and gaining some level of comfort with the basics. We will mostly be following <a href="https://link.springer.com/book/10.1007/978-3-319-99420-8">Java In Two Semesters</a>. It has a lot of exercises for you to do in your own time, please make sure to find some time to practice independently. Even though we would be following a book that is not recommended by IB rest assured that anything we do in class can directly be linked to the IB curriculum. In fact, in these README files we will start with what you IB learning outcomes you should walk away with after completing the lesson.
+Welcome to your first lesson. This lesson is all about breaking the ice and gaining some level of comfort with the basics. We will mostly be following <a href="https://link.springer.com/book/10.1007/978-3-319-99420-8">Java In Two Semesters</a>. It has a lot of exercises for you to do in your own time, please make sure to find some time to practice independently. Even though we would be following a book that is not recommended by IB rest assured that anything we do in class can directly be linked to the IB curriculum. In fact, in these README files we will start with the IB learning outcomes you should walk away with after completing the lesson.
 
 ## IB Learning Outcomes
 - 4.3.3 Explain the essential features of a programming language.

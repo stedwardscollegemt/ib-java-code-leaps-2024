@@ -10,7 +10,7 @@ written — either by ourselves or by someone else</ins>. For example, you have 
 - D.1.5 Describe the process of decomposition into several objects.
 - D.1.6 Describe the relationships between objects of a given problem.
 - D.1.7 Outline the need to reduce dependencies between objects in a given problem (SOLID).
-- D.2.2, 5 Define the term Inheritance and Outline Advantages
+- D.2.2 Define the term inheritance and outline Advantages
 
 ## 9.2 Defining Inheritance
 
@@ -22,7 +22,7 @@ In the last lesson we defined *Abstraction* and *Encapsulation*. Now, we obvious
 
 Inheritance is the sharing of attributes and methods among classes by using the `extends` keyword in Java. We can take one class, and then define other classes based on the first one. The new classes inherit all the attributes and methods of the first one, but may have attributes and methods of their own. The new classes are able to access any `protected` attributes as though they have been defined within that class.
 
-This defined the "is-a" relationship and perhaps one of the most easiest to grasp and explain.
+This defines the "is-a" relationship and perhaps one of the most easiest to grasp and explain.
 
 1. Lions, tigers and persians are different animals but they are all *Cats*.
 2. Squares, triangles and circles have different mathematical properties but they are all *Shapes*.

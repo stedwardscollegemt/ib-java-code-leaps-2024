@@ -11,6 +11,8 @@
 10 b. An Arrival *has a* (tight dependency) with Flight. We should not create an instance of Arrival without Flight.
 
 10 c. 
+
+```
 ------------------------------
 |          Arrival           |
 ------------------------------
@@ -27,6 +29,7 @@
 | + int compareWith(String)  |
 | + int compareWith(Arrival) |
 ------------------------------
+```
 
 10 d. 
 

@@ -1,4 +1,4 @@
-package topicDlearningaids.nov2018hlp2;
+package topicDlearningaids.nov2018p2;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -36,5 +36,16 @@ public class FlightManagement {
             // if arrival has not landed AND arrival.getETA() is less than t
             // then output
         }
+    }
+
+    private static int search(String flightID)
+    { 
+        // loop through all Arrival objects in inbound
+        for(int i = 0; i < inbound.length; i++) {
+            // get the next instance of Arrival
+            Arrival tempArrival = inbound[i];
+        }
+        // missing code that searches the array inbound and
+        // returns the index of the Arrival object with flightID
     }
 }

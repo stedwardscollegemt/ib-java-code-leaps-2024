@@ -40,12 +40,13 @@ public class FlightManagement {
 
     private static int search(String flightID)
     { 
+        int index = 0; 
         // loop through all Arrival objects in inbound
-        for(int i = 0; i < inbound.length; i++) {
+        while (inbound[index].compareWith(flightID) != 0) {
             // get the next instance of Arrival
-            Arrival tempArrival = inbound[i];
+            index++;
         }
-        // missing code that searches the array inbound and
         // returns the index of the Arrival object with flightID
+        return index;        
     }
 }

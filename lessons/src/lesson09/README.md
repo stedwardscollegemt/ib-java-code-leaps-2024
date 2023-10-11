@@ -10,7 +10,11 @@ written — either by ourselves or by someone else</ins>. For example, you have 
 - D.1.5 Describe the process of decomposition into several objects.
 - D.1.6 Describe the relationships between objects of a given problem.
 - D.1.7 Outline the need to reduce dependencies between objects in a given problem (SOLID).
+<<<<<<< Updated upstream
 - D.2.2 Define the term inheritance and outline Advantages
+=======
+- D.2.2 Define the term Inheritance and Outline Advantages
+>>>>>>> Stashed changes
 
 ## 9.2 Defining Inheritance
 

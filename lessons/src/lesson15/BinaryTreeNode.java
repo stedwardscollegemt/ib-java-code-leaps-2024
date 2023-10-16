@@ -5,7 +5,7 @@ public class BinaryTreeNode {
     // Data
     private boolean isRoot;
 
-    // TODO: Create a private attribute for isVisited
+    private boolean isVisited;
 
     private String key; // In here we are storing "P", "C"
 
@@ -29,34 +29,47 @@ public class BinaryTreeNode {
         return this.isRoot;
     }
 
-    // TODO: isParent
+    public boolean isParent() {
+        if (this.left != null || this.right != null) {
+            return true;
+        }
+        return false;
+    }
 
     public void setLeft(BinaryTreeNode left) {
         this.left = left;
     }
 
-    // TODO: setRight
+    public void setRight(BinaryTreeNode right) {
+        this.right = right;
+    }
 
-    // TODO: getLeft
+    public BinaryTreeNode getLeft() {
+        return this.left;
+    }
 
-    // TODO: getRight
+    public BinaryTreeNode getRight() {
+        return this.right;
+    }
 
-    // TODO: visit - print out the key by default and set is visited to true
+    public void visit() {
+        System.out.print(this.key + ", ");
+    }
 
     /**
      * Tree Node Traversals
      */
     public void printInorder()
     {
-        // TODO: if this node is visited already, do nothing (return)
+        if (this.isVisited) return;
 
         /* Recur on the left as much as you can */
         if (this.left != null) {
             this.left.printInorder();
         }
         
-        /* TODO: Print */
-        // call visit
+        // visit the current node
+        this.visit();
         
         /* Recur on the right */
         if (this.right != null) {
@@ -64,7 +77,39 @@ public class BinaryTreeNode {
         }
     }
 
-    // TODO: postOrder
+    public void printPostOrder()
+    {
+        if (this.isVisited) return;
 
-    // TODO: preOrder
+        /* Recur on the left as much as you can */
+        if (this.left != null) {
+            this.left.printPostOrder();
+        }
+
+        /* Recur on the right */
+        if (this.right != null) {
+            this.right.printPostOrder();
+        }
+        
+        // visit the current node
+        this.visit();
+    }
+
+    public void printPreOrder()
+    {
+        if (!this.isVisited) {
+            // visit the current node
+            this.visit();
+        }
+
+        /* Recur on the left as much as you can */
+        if (this.left != null) {
+            this.left.printPreOrder();
+        }
+
+        /* Recur on the right */
+        if (this.right != null) {
+            this.right.printPreOrder();
+        }
+    }
 }

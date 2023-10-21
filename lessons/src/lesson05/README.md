@@ -20,10 +20,10 @@ public static void main(String[] args) {
     // code written during the lesson
 }
 ```
-<b>The Method Signature</b>
+<b>The Anatomy of a Method:</b>
 
-- Header: the first four words followed by parenthesis
-- Body: the two curly brackets and its contents
+- <b>Header:</b> the first four words followed by parenthesis
+- <b>Body:</b> the two curly brackets and its contents
 
 ## Keyboard.readInt()
 

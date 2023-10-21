@@ -37,7 +37,7 @@ int points = 10;
 
 ## 2.3, 2.5 Constants
 
-A *constant* is a variable whose value cannot change once it has been assigned. We normally declare constants to store pieces of data that is not configurable like the number of days in a week, or the value of pi. Using constants for these special data items makes your code more readable. Declaring a constant is very similar to declaring a variable but we must use a keyword `final` at the beginning of the statement:
+A *constant* is a data item that has a value which cannot change during program execution. We normally declare constants to store pieces of data that is not configurable like the number of days in a week, or the value of pi. Using constants for these special data items makes your code more readable. Declaring a constant is very similar to declaring a variable but we must use a keyword `final` at the beginning of the statement:
 
 ```
 final double PI = 3.141592653589793238;

@@ -11,7 +11,7 @@
 We need our programs to store and manipulate data so it becomes valuable information. We are surrounded by different kinds of data, therefore Java allows us to easily classify various data into different *primitive* or *standard* types since they are built-in:
 
 > [!IMPORTANT]
-> A primitive data type is a basic type that is built-in to Java and so all of these are keywords. More complex types are constructed using > these types.
+> A primitive data type is a basic type that is built-in to Java and so all of these are keywords. More complex types are constructed using these types.
 
 - `int` is short for `Integer` and can store whole numbers e.g. 1, 2, -4
 - `float` is short for floating-point and can store real numbers within a specific range e.g 0.1, 0.005, 6.7

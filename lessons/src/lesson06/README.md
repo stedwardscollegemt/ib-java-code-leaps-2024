@@ -60,7 +60,7 @@ The last index is always going to be the size minus one.
 
 Using the same logic we can update specific array locations with values:
 
-```
+```java
 points[0] = 9;
 points[1] = 4;
 
@@ -80,7 +80,7 @@ sc.close();
 ```
 Basically, you can treat a single array element as you would any other variable!
 
-```
+```java
 if (points[0] > points[1]) {
     int temp = points[0];
     // swap positions
@@ -97,7 +97,7 @@ Try it out for yourself and see if you get an `ArrayIndexOutOfBoundsException`.
 
 We have recently done `while` loops in Java, but there is another kind of loop in particular that is really useful with arrays. Since arrays are of a *fixed size* then they are are naturally pairing with `for` loops, which loops code for a definite number of times.
 
-```
+```java
 for (int i = 0; i < 10; i++) { // i will go up in steps of 1 from 0 to 9
     System.out.println(points[i]);
 }
@@ -107,7 +107,7 @@ It is important that you start iterating/counting (we tend to use *i* because it
 
 If you do not really care about the position of the elements then you can use a *special* for loop provided by Java just to get each and every element in an array.
 
-```
+```java
 // for each element which we named p in points
 for (int p : points) {
     System.out.println(p);
@@ -120,7 +120,7 @@ The above can come in very handy in the future.
 
 Instead of remembering the size of the array you can use the array property `.length` on any array variable e.g.:
 
-```
+```java
 points.length; // gives you 10
 temperatures.length; // gives you 15
 ```
@@ -131,7 +131,7 @@ We recently learned about methods allowing us to write programs into "blocks" or
 
 Methods can receive whole arrays as a parameter (input).
 
-```
+```java
 public static void printElements(double[] arr) {
     // this is a special loop that visits every element in an array
     for(double e : arr) {
@@ -145,7 +145,7 @@ public static void printElements(double[] arr) {
 
 And can also return an entire array (output).
 
-```
+```java
 public static int[] truncate(int[] arr, int cutOffIndex) {
     int size = cutOffIndex + 1;
     int[] truncated = new int[size];

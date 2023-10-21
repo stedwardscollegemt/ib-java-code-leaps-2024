@@ -10,11 +10,7 @@ written — either by ourselves or by someone else</ins>. For example, you have 
 - D.1.5 Describe the process of decomposition into several objects.
 - D.1.6 Describe the relationships between objects of a given problem.
 - D.1.7 Outline the need to reduce dependencies between objects in a given problem (SOLID).
-<<<<<<< Updated upstream
-- D.2.2 Define the term inheritance and outline Advantages
-=======
 - D.2.2 Define the term Inheritance and Outline Advantages
->>>>>>> Stashed changes
 
 ## 9.2 Defining Inheritance
 
@@ -40,7 +36,7 @@ A shape is a shape because a continuous line is eventually closed forming a boun
 
 A car is a car because it is a wheeled vehicle for the purpose of transportation.
 
-```
+```java
 public class Lion extends Cat { ... }
 
 public class Ford extends Car { ... }
@@ -58,7 +54,7 @@ Example:
 <img src="https://raw.githubusercontent.com/stedwardscollegemt/ib-java-code-leaps-2024/main/lessons/img/inheritence_example.jpg">
 
 
-```
+```java
 public class MainMeal extends FoodItem {
 
     /*---- Attributes -----------------------------------------------------------------*/

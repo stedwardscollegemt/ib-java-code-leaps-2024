@@ -13,7 +13,7 @@ Allows us to instruct the computer to carry out a task over, and over again by r
 
 Sometimes, repetition which is not fixed is required. In such cases a for loop is not very useful. However, the `while` loop offers non-fixed iteration.
 
-```
+```java
 while(/* test goes here */) {
     // instruction (s) to be repeated go here
 }

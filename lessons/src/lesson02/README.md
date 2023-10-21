@@ -23,18 +23,19 @@ We need our programs to store and manipulate data so it becomes valuable informa
 
 A *variable* is a data container that saves the data values during Java program execution in our main memory, or RAM. In Java, when declaring a variable we have to specify the data type, so that Java knows how much memory needs to reserved, and, give it a name. A declaration only occurs once within a scope defined by `{}`.
 
-```
+```java
 int points;
 ```
 
 To store a value of 10 in the `points` variable we need to perform an assignment. An assignment can occur many times within a scope:
 
-```
+```java
 points = 10;
 ```
 
 It is possible to do a declaration and assignment of a variable in the same statement:
-```
+
+```java
 int points = 10;
 ```
 
@@ -42,7 +43,7 @@ int points = 10;
 
 A *constant* is a data item that has a value which cannot change during program execution. We normally declare constants to store pieces of data that is not configurable like the number of days in a week, or the value of pi. Using constants for these special data items makes your code more readable. Declaring a constant is very similar to declaring a variable but we must use a keyword `final` at the beginning of the statement:
 
-```
+```java
 final double PI = 3.141592653589793238;
 ```
 
@@ -60,13 +61,13 @@ It is very common to need to perform some kind of arithmetic. Java has 4 familia
 
 <b>Usage</b><br/>
 
-```
+```java
 int x;
 x = 10 + 25;
 ```
 It is always a good idea to group terms using parenthesis when expressions have multiple operators. Precendence as follows: brackets, division, multiplication, addition and subtraction (BODMAS).  
 
-```
+```java
 double cost;
 cost = 500 * (1 + 17.5/100);
 ```

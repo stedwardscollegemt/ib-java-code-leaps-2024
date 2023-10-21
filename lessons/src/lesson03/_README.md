@@ -20,7 +20,7 @@ We will look into a number of ways how we can incorporate decision making in our
 
 ## 3.3 The IF statement
 
-```
+```java
 if (/* boolean logic goes here (hello again topic 2) */) {
     // instruction(s) that only get invoked when true
 }
@@ -28,7 +28,7 @@ if (/* boolean logic goes here (hello again topic 2) */) {
 
 ## 3.4 The IF ... ELSE statement
 
-```
+```java
 if (/* boolean logic goes here (hello again topic 2) */) {
     // instruction(s) that only get invoked when true
 } else {
@@ -60,7 +60,7 @@ Java blocks of code take either in the form of one statement, or a number of sta
 
 The reality is that any code block can be within another code block, therefore, we can also have an `if...else` statement within another `if...else` statement. This is similar to what is in `Selection`.
 
-```
+```java
 if (age >= 60) {
     // This code will run if and only if age is greater or equal to 60
     System.out.println("Enjoy your golden years!");
@@ -74,7 +74,7 @@ if (age >= 60) {
 
 Although the above could look considerably neater by perhaps doing...
 
-```
+```java
 if (age >= 60) {
     // This code will run if and only if age is greater or equal to 60
     System.out.println("Enjoy your golden years!");

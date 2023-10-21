@@ -15,7 +15,7 @@ Every time we create a new file in Java, you always defined the  `main()` which 
 
 ## A closer look at the main()
 
-```
+```java
 public static void main(String[] args) {
     // code written during the lesson
 }
@@ -29,7 +29,7 @@ public static void main(String[] args) {
 
 We have also been relying on methods written for us in the `Keyboard` class. In the example below we are calling `readInt()` which resides in the `Keyboard` class. It contains code that can accept user input and convert it into an integer.
 
-```
+```java
 int age = Keyboard.readInt();
 ```
 
@@ -37,7 +37,7 @@ int age = Keyboard.readInt();
 
 Here is an example of a custom method, which is not the `main()` inside a class called `MathPal`. Look at the method `add`.
 
-```
+```java
 public class MathPal {
     
     public static void main(String[] args) {
@@ -52,7 +52,7 @@ public class MathPal {
 
 To make use of methods, you can *call* it in another place in your code.
 
-```
+```java
 public class MathPal {
     public static void main(String[] args) {
         // this is a method call

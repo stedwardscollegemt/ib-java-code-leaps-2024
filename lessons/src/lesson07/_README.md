@@ -17,7 +17,8 @@ You need to understand two fundamental facts...
 - A class is a template that defines the form of an object.
 - An object is a particular instance of a class.
 
-The class is a *logical abstraction* and does not really take memory space during program execution. It is only until instances have been created (as concrete representations) that we start to consume memory. 
+>[!IMPORTANT]
+>The class is a *logical abstraction* and does not really take memory space during program execution. It is only until instances have been created (as concrete representations) that we start to consume memory. 
 
 We will learn that classes contain variables, also known as object properties, and methods, which we sometimes refer to as behaviour. 
 
@@ -27,7 +28,7 @@ We will learn that classes contain variables, also known as object properties, a
 
 A class is created by using the keyword `class`. As we have seen previously it is very possible to create classes with just methods. Similarly, it is technically possible to just create classes that contain only variables. However, we generally create objects that model real world objects and processes so it is very common to define classes that contain both variables and methods.
 
-```
+```java
 public class Soldier {
     // declare variables
     public int health;
@@ -45,7 +46,7 @@ In previous lessons we have designed an entity for *Soldier*, and today we are g
 
 In Java, anything that is not a primitive data type is an object therefore without really appreciating it perhaps, we already gained some experiencing creating physical objects when dealing with arrays.
 
-```
+```java
 // from lesson 07
 int[] myNumbers = new int[100];
 ```
@@ -54,7 +55,7 @@ I would like to make special attention to the `new` keyword as it is common in a
 
 Let's look at the creation of a `Soldier` instance as an example, the following resides in <b>SoldierFactory.java</b>:
 
-```
+```java
 Soldier jack = new Soldier(); // declare and create physical instance of Soldier
 ```
 
@@ -64,7 +65,7 @@ The above declaration does two things:
 
 To really showcase the above, we could have rewritten the statement above to show the steps individually:
 
-```
+```java
 Solder jack;
 jack = new Soldier();
 ```
@@ -72,13 +73,13 @@ jack = new Soldier();
 
 After you created a physical copy of a class, then you should have access to properties and make use of them in your program. For example assigning a value to a property:
 
-```
+```java
 jack.name = "Jack"; // assigning a value to a property
 ```
 
 However as already mentioned in previous lessons it is a very good idea to use object methods to change properties e.g.
 
-```
+```java
 jack.reduceHealth();
 System.out.println(jack.health); // should print out 3
 ```
@@ -91,7 +92,7 @@ Java treats a data like `"Ms. Camilleri"` which we refer to as <b>text</b> as an
 
 For textual data, Java offers a powerful utility class (template) called `String`. To store textual data in memory then you need to instasiate a `new` object like so:
 
-```
+```java
 String myName = new String(); // very similar to our soldier example
 ```
 

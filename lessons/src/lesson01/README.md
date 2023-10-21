@@ -1,6 +1,6 @@
 # First Step
 
-Welcome to your first lesson. This lesson is all about breaking the ice and gaining some level of comfort with the basics. We will mostly be following <a href="https://link.springer.com/book/10.1007/978-3-319-99420-8">Java In Two Semesters</a>. It has a lot of exercises for you to do in your own time, please make sure to find some time to practice independently. Even though we would be following a book that is not recommended by IB rest assured that anything we do in class can directly be linked to the IB curriculum. In fact, in these README files we will start with the IB learning outcomes you should walk away with after completing the lesson.
+Welcome to your first lesson. This lesson is all about breaking the ice and gaining some level of comfort with the basics. We will mostly be following <a href="https://link.springer.com/book/10.1007/978-3-319-99420-8">Java In Two Semesters</a>. It has a lot of exercises for you to do in your own time, please make sure to find some time to practice independently. Even though we would be following a book that is not recommended by IB rest assured that anything we do in class can directly be linked to the IB curriculum. In fact, in these README files we will start with the IB learning outcomes you should walk away with after completing the lesson. I decided to expose a digital copy that you can access directly from <a href="file:///G:/My%20Drive/Public/St%20Edwards%20College%20IB%20Computer%20Science/Java%20Resources/Java%20In%20Two%20Semesters.pdf">here</a>.
 
 ## IB Learning Outcomes
 - 4.3.3 Explain the essential features of a programming language.
@@ -21,7 +21,7 @@ A program is an ordered sequence of instructions for the computer to execute. An
 
 The first line (the header) looks like this:
 
-```
+```java
 public class HelloWorld
 ```
 
@@ -31,13 +31,13 @@ We then move on to write more code within the {}; these tell the compiler (recal
 
 As our programs become larger and more complex you can imagine that our projects will contain multiple classes therefore multiple files to keep our source code neat and organised. However, *just one* of the classes must declare the `main` method which indicates the beginning of a program.
 
-```
+```java
 public static void main(String[] args)
 ```
 
 Finally let us look at the most exciting bit. The single line of code that actually produces an output! The line below prints out text of our choice on to the console when we **run** our program. 
 
-```
+```java
 System.out.println("Hello, world!");
 ```
 

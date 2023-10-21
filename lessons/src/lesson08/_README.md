@@ -89,7 +89,7 @@ We control this by making use of *access modifiers* in Java: `public`, `private`
 
 So for the case of our `Student` we want to set `name` and `dateOfBirth` as `private` but give read access by providing `public` <b>accessor methods</b> that simple `return` the value of the attributes. 
 
-```
+```java
 public class Student {
     
     private String name;
@@ -115,7 +115,57 @@ public class Student {
 
 ## 8.4 The static Keyword
 
+You have already seen the keyword static in front of the names of methods in some Java classes. 
+
+```java
+package lesson07;
+
+public class SoldierFactory {
+
+    public static void main(String[] args) {
+        // code...
+    }
+}
+```
+
+Like `public`, `static` is also a *modifier* so it determines the particular way a class, attribute or method is accessed. 
+
+> [!IMPORTANT]
+> A `static` element within a class can be accessed without creating an instance. 
+ 
+We normally create classes to be able to instantiate them so that they can have a *state*. Anything that is static cannot belong to a particular state so members with this modifier can be used through the *classname*. The use of the `static` keyword in real-world examples is very rare (quite frowned upon) but it is generally accepted to use them for *constants*.  
+
+For example:
+
+```java
+package lesson08;
+
+public class Points {
+
+    public static final String BRONZE_STATUS = "bronze";
+}
+```
+
+It probably makes sense not to have to rely on a particular instance to know that there is a concept of a `BRONZE_STATUS` because it is not particular to a single instance. Moreover, it is also `public` so from anywhere outside of our program we can access this member like so:
+
+```java
+String bronze = Points.BRONZE_STATUS;
+```
+
+This means that is we create 5 instances of our `Points` class using the `new` keyword...
+
+```java
+Points caitlinPoints = new Points();
+Points joshuaPoints = new Points();
+Points simonPoints = new Points();
+```
+
+All instances will share the `static` trait and all be able to access the same value, not only because it is final, but because it has this special modifier.
+
+> [!NOTE]
+> IB exam questions tend to use *static variables* within a class to keep a track of how many instances are being created. Although this is not widely adopted practice.   
+
 ## 8.7 Passing Objects as Parameters
 
-
+One of the nicest characteristics of Java (a huge improvement from its gradfather C) is that *primitive data items* that are passed as a paramter are passed by value. However, *objects* are more complex, and are stored deeper into our memory (heap) so Java needs to pass in a memory location which we call a *pointer* or *reference*. Although the books covers this in detail, to keep these notes simple to understand it is better to look at this concept more closely in a later chapter. 
 

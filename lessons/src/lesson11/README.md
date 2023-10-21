@@ -17,6 +17,8 @@ As you know, in IB, you will demonstrate this process by developing a solution o
 
 - 1.1.1 Identify the context of which a new system is planned.
 - 1.1.7 Suggest various types of testing.
+- D.1.7 Outline the need to reduce dependencies between objects in a given problem.
+- Explain the advantages of modularity in program development.
 - D.3.10 Discuss the ethical and moral obligations of programmers.
 
 # Mini SDLC
@@ -53,7 +55,9 @@ public class FlourCupsGramsConvert {
 
 ## Design
 
-Whilst there is nothing wrong with our program, it does not really make use of <b>SOLID</b>. We have grown since the second lesson, we want to think ahead, we want to add value for our users. Therefore we need to make sure our program is <b>testable</b> and <b>extendable</b>. It is our obligation as developers to do so. The previous solution is none of these things so we need a *refactor* (all developers in the world shudder).
+Whilst there is nothing wrong with our program, it does not really make use of <b>SOLID</b>. For example, 'S' (single responsibility) is broken here because we have one class that is responsible for doing the conversion and giving the user an interface. This means that we cannot test the conversion in isolation, or, without the interface, making automated testing awkward. 
+
+We have grown since the second lesson, we want to think ahead, we want to add value for our users. Therefore we need to make sure our program is <b>testable</b> and <b>extendable</b>. It is our obligation as developers to do so. The previous solution is none of these things so we need a *refactor* (all developers in the world shudder).
 
 Not to worry, I got your back this time round!
 
@@ -61,7 +65,7 @@ Not to worry, I got your back this time round!
 
 ## Coding for Automated Tests
 
-Aside from using the software as though as user would... testing a main() is a bit awkward. Once we have the important stuff in a module then we can write an automated test *ding* advantage of "modularity" right there.
+Aside from using the software as though as user would... testing a main() is a bit awkward. <mark>Having two separate modules, where one is responsible for the conversion (or logic) and one is responsible only for the command-line interface (user experience) makes testing our logic much easier. Once we have the important stuff in a module then we can write an automated test *ding* advantage of "modularity" right there.</mark>
 
 Let us level up:
 

@@ -4,6 +4,9 @@ package lesson08;
  * Copied from May 2018 SL Paper 2
  */
 public class Points {
+
+    public static final String BRONZE_STATUS = "bronze";
+    
     /**
      * ----- Attributes (Data)--------------------------------------------------------
      */

@@ -12,6 +12,9 @@ public class BinaryTreeNode {
     private BinaryTreeNode left;
 
     private BinaryTreeNode right;
+
+    // light ui dependency
+    StringBuffer printBuffer = new StringBuffer();
     
     // Constructor
     public BinaryTreeNode(boolean isRoot, String key) {
@@ -53,19 +56,21 @@ public class BinaryTreeNode {
     }
 
     public void visit() {
+        
         System.out.print(this.key + ", ");
+        this.isVisited = true;
     }
 
     /**
      * Tree Node Traversals
      */
-    public void printInorder()
+    public void printInOrder()
     {
         if (this.isVisited) return;
 
         /* Recur on the left as much as you can */
         if (this.left != null) {
-            this.left.printInorder();
+            this.left.printInOrder();
         }
         
         // visit the current node
@@ -73,7 +78,7 @@ public class BinaryTreeNode {
         
         /* Recur on the right */
         if (this.right != null) {
-            this.right.printInorder();
+            this.right.printInOrder();
         }
     }
 

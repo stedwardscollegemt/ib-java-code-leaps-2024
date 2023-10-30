@@ -1,5 +1,7 @@
 package lesson15;
 
+import lesson02.BuildingBlocks;
+
 public class BinaryTreeNode {
     
     // Data
@@ -14,7 +16,7 @@ public class BinaryTreeNode {
     private BinaryTreeNode right;
 
     // light ui dependency
-    StringBuffer printBuffer = new StringBuffer();
+    private static StringBuilder printBuffer = new StringBuilder();
     
     // Constructor
     public BinaryTreeNode(boolean isRoot, String key) {
@@ -55,18 +57,21 @@ public class BinaryTreeNode {
         return this.right;
     }
 
-    public void visit() {
-        
-        this.printBuffer.append(this.key + ", ");
+    public void visit() { 
+        BinaryTreeNode.printBuffer.append(this.key + ", ");
         this.isVisited = true;
+    }
+
+    public StringBuilder getPrintBuffer() {
+        return BinaryTreeNode.printBuffer;
     }
 
     /**
      * Tree Node Traversals
      */
-    public StringBuffer printInOrder()
+    public void printInOrder()
     {
-        if (this.isVisited) return printBuffer;
+        if (this.isVisited) return;
 
         /* Recur on the left as much as you can */
         if (this.left != null) {
@@ -80,8 +85,6 @@ public class BinaryTreeNode {
         if (this.right != null) {
             this.right.printInOrder();
         }
-
-        return printBuffer;
     }
 
     public void printPostOrder()
@@ -100,6 +103,8 @@ public class BinaryTreeNode {
         
         // visit the current node
         this.visit();
+
+        return;
     }
 
     public void printPreOrder()
@@ -118,5 +123,7 @@ public class BinaryTreeNode {
         if (this.right != null) {
             this.right.printPreOrder();
         }
+
+        return;
     }
 }

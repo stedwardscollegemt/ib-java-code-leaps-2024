@@ -41,5 +41,15 @@ public class BinaryTreeNodeTest {
         teardown();
     }
 
-    
+    public void testPrintInOrder() {
+        setup();
+        String expected = "";
+        String actual = mockRoot.isRoot();
+        if (expected == actual) {
+            System.out.print("P ");
+        } else {
+            System.out.print("F ");
+        }
+        teardown();
+    }    
 }

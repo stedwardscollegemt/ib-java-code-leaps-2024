@@ -12,6 +12,7 @@ public class BinaryTreeDemo {
 
         System.out.println(csTeacher.isLeafNode());
 
-        csTeacher.printPreOrder();
+        csTeacher.printInOrder();
+        System.out.println(csTeacher.getPrintBuffer());
     }
 }

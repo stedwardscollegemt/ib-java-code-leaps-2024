@@ -57,16 +57,16 @@ public class BinaryTreeNode {
 
     public void visit() {
         
-        System.out.print(this.key + ", ");
+        this.printBuffer.append(this.key + ", ");
         this.isVisited = true;
     }
 
     /**
      * Tree Node Traversals
      */
-    public void printInOrder()
+    public StringBuffer printInOrder()
     {
-        if (this.isVisited) return;
+        if (this.isVisited) return printBuffer;
 
         /* Recur on the left as much as you can */
         if (this.left != null) {
@@ -80,6 +80,8 @@ public class BinaryTreeNode {
         if (this.right != null) {
             this.right.printInOrder();
         }
+
+        return printBuffer;
     }
 
     public void printPostOrder()

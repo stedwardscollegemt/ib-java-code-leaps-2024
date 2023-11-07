@@ -6,10 +6,17 @@ public class FoodItem {
 
     protected double price;
 
-
     // Method
+    public FoodItem(String code, double price) {
+        
+    }
+
 
     /** Accessor */
+    protected void setPrice(double price) {
+        this.price = price;
+    } 
+    
     public double getPrice() {
         return this.price;
     }

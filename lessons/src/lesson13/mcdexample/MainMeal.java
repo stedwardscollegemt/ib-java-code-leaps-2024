@@ -8,6 +8,11 @@ public class MainMeal extends FoodItem {
 
     DrinkItem drink;
 
+    public MainMeal(Sandwich sandwich) {
+        super(sandwich.code, sandwich.price);
+        this.drink = new DrinkItem("Coca Cola");
+    }
+
     @Override
     public double getPrice() {
         this.price = this.sandwich.price + (this.sandwich.price * PRICE_MARKUP);

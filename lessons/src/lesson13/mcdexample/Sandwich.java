@@ -12,8 +12,6 @@ public class Sandwich extends FoodItem {
 
     boolean isPremium;
 
-
-
     // Constructor
     public Sandwich(String code, boolean isPremium) {
         super(code, STANDARD_PRICE);
@@ -33,9 +31,5 @@ public class Sandwich extends FoodItem {
                 order = order + grillOrder[i] + " ";
             }
         }
-    }
-
-    public String myName() {
-        return "Erika";
     }
 }

@@ -1,6 +1,6 @@
 package lesson13.mcdexample;
 
-public class FoodItem {
+public abstract class FoodItem {
     
     protected String code; // "CHB MCH" "MCN"
 
@@ -8,9 +8,9 @@ public class FoodItem {
 
     // Method
     public FoodItem(String code, double price) {
-        
+        this.code = code;
+        this.price = price;
     }
-
 
     /** Accessor */
     protected void setPrice(double price) {

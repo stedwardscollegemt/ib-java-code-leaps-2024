@@ -43,8 +43,9 @@ public class BinaryTreeNodeTest {
 
     public void testPrintInOrder() {
         setup();
-        String expected = "";
-        String actual = mockRoot.isRoot();
+        String expected = "FT, JB, EC, BSZ, ";
+        mockRoot.printInOrder();
+        String actual = BinaryTreeNode.getPrintBuffer().toString();
         if (expected == actual) {
             System.out.print("P ");
         } else {

@@ -1,4 +1,4 @@
-package topic05learningaids;
+package topic05learningaids.recursion;
 
 import helpers.Keyboard;
 

@@ -1,4 +1,4 @@
-package topic05learningaids;
+package topic05learningaids.arrays_2D;
 
 /**
  * 5.1.4 - Describe the nature of 2D arrays.

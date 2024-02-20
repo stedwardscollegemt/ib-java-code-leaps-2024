@@ -75,12 +75,79 @@ public class SideItem extends FoodItem {
 }
 ```
 
+It is less common, but possible to *overload behaviour methods*. Just remember, to overload (reuse) the same name/label and pass in a unique set of parameters.
+
 ### Method Overriding
 
 This is a Java feature related to polymorphism. When an object inherits behaviour from the parent, since the child object takes a different shape, then some logic must be enhanced e.g., the `getPrice()` of the MainMeal. For this reason, we can use `@Override` which allows us to use the same *method signature* for different logic. You must inherit from a class to use this overriding feature.
 
+```java
+public class MainMeal extends FoodItem {
+    
+    final double PRICE_MARKUP = 0.26;
+
+    Sandwich sandwich;
+
+    DrinkItem drink;
+
+    public MainMeal(Sandwich sandwich) {
+        super(sandwich.code, sandwich.price);
+        this.drink = new DrinkItem("Coca Cola");
+    }
+
+    @Override
+    public double getPrice() {
+        this.price = this.sandwich.price + (this.sandwich.price * PRICE_MARKUP);
+        return this.price;
+    }
+}
+```
+
+This feature has a lot of advantages, for one, even though a lot of code is reused, the developer is still free to make tweaks to the logic as needed.
+
 # May 2017 Paper 2 Question 14 (i)
 
 <b>Q: Discuss the use of polymorphism that occurs in this suite of programs.</b>
+
+Step 1.
+
+<u>Identify a case of polymorphism (overriding/overloading).</u>
+
+In this case, we can identify *method overloading* because we have two constructors using the same name, but different sets of parameters.
+
+```java
+//constructor for a new salesperson
+public SalesPerson(String id)
+{
+    // code missing
+}
+
+// constructor for a salesperson transferred (together with
+// their sales details) from another branch
+public SalesPerson(String id, Sales[] s, int c)
+{
+    // code missing
+}
+```
+
+Step 2. 
+
+<u>An advantage and disadvantage</u>
+
+An advantage is that a developer can choose to create an instance of `SalesPerson` in two ways. The developer can either just pass in the `String id` and have default values for the rest of the attributes, or else, the developer passes in the `String id`, the `Sales[] s` and the `int c`. 
+
+Of course, this makes code more complex, and developers must make sure to use OOP features in such a way that SOLID principles are obeyed. Having the same name, with different sets of parameters implies that we have two responsibilities. So unfortunately this breaks the "single responsibility" principle. 
+
+Step 3. 
+
+<u>A conclusion</u>
+
+Polymorphism is very useful, it encourages *modularity*, and developers are encouraged to create small modules which can be extended/inherited from and tweak logic as necessary. This is called *overriding*. 
+
+
+
+
+
+
 
 

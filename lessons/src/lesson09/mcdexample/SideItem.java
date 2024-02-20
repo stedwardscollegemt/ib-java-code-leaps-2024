@@ -1,5 +1,6 @@
 package lesson09.mcdexample;
 
-public class SideItem {
+// Link to lesson 09
+public class SideItem extends FoodItem {
     
 }

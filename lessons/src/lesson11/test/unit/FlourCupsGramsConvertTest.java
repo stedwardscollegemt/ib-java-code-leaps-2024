@@ -22,7 +22,7 @@ public class FlourCupsGramsConvertTest {
     private void testConversionHappyPath() {
         setUp();
         
-        double expected = 10;
+        double expected = 360;
         double actual = mock.getGrams();
 
         if (actual == expected) {

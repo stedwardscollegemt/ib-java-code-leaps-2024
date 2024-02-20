@@ -62,7 +62,8 @@ public class BinaryTreeNode {
         this.isVisited = true;
     }
 
-    public StringBuilder getPrintBuffer() {
+    // Allow for static access
+    public static StringBuilder getPrintBuffer() {
         return BinaryTreeNode.printBuffer;
     }
 

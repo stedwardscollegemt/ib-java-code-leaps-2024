@@ -38,6 +38,11 @@ public class TransportCard {
     public double getBalance() {
         return balance;
     }
+
+    // Mutator
+    public void setColor(String colorIn) {
+        color = colorIn;
+    }
 }
 
 

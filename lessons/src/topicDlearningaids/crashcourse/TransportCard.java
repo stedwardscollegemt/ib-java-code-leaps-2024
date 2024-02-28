@@ -17,6 +17,12 @@ public class TransportCard {
 
     private String color = "Green";
 
+    private boolean journeyActivated = false;
+
+    private String start;
+
+    private String stop;
+
     // ---- Behaviour [Member Methods] ---------------------------------------------------------------------------------
     // Define parameter: Methods in Java are normal algorithms that accept input elements as parameters. 
     //                   Parameters are just variables that are created to temporarily store input values
@@ -42,6 +48,25 @@ public class TransportCard {
     // Mutator
     public void setColor(String colorIn) {
         color = colorIn;
+    }
+
+    protected void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public void startJourney(Route route) {
+        if (this.balance >= 0.5) {
+            this.journeyActivated = true;
+            this.start = route.getCurrentStop();
+        } else {
+            System.out.println("Error, Please top-up before you get on a bus!");
+        }
+    }
+
+    public void endJourney(Route route) {
+        double fair = route.calculateFair(start, route.getCurrentStop());
+        this.balance = balance - fair;
+        this.journeyActivated = false;
     }
 }
 

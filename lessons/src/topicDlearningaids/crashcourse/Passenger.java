@@ -20,7 +20,7 @@ public class Passenger {
 
     private Date dateOfBirth;
 
-    TransportCard card;
+    private TransportCard card;
 
     /**
      * Define constructor: 
@@ -44,5 +44,11 @@ public class Passenger {
          * This is a special statement that allows a method to give back a particular value. 
          */
         return fullName;
+    }
+
+   
+    public void setFullName(String fullName) {
+        // validate the fullName
+        this.fullName = fullName;
     }
 }

@@ -4,6 +4,16 @@ import java.util.Date;
 
 public class Passenger {
     
+    /**
+     * Access modifier
+     * ---------------
+     * We can control read/write access by encapsulating the variables and
+     * using certain keywords. In this case, `private` indicates that this
+     * variable is can only be read or written to by Passengar. 
+     * 
+     * If we would like to give read/write permissions in other classes, we could
+     * do so by providing `public` accessors and getters.
+     */
     private String idNumber;
 
     private String fullName;
